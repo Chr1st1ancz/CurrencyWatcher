@@ -10,4 +10,6 @@ TODO List
 > ne lol 
 
 ### Stylistika
-Family - System
+- System
+- 20px základní
+- 32px nadpis
