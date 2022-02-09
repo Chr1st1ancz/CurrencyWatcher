@@ -1,0 +1,3 @@
+"EMAIL","FOLLOWEDCURRENCIES"
+"bob.meier@abcde.abc","{CZK=true, USD=true, EURO=false}"
+"john.jones@abcde.abc","{CZK=true, USD=true, EURO=false}"
