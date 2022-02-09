@@ -1,5 +1,7 @@
 # CurrencyWatcher
 
+#### 
+
 #### 09.2.2022
 - počátek práce. Nikdo nemá nic. Nedáme to. Konec hlášení. 
 - rozdělení práce v excelu
@@ -8,4 +10,18 @@
 - začátek návrhu aplikace
           
 #### TODO:
- - [ ] todo TODO list
+ - Abraham
+   - [ ] todo TODO list
+   - [ ] logger implement
+ - Mattias
+   - [ ] todo TODO list
+   - [ ] logger implement
+ - Novak
+   - [ ] todo TODO list
+   - [ ] logger implement
+ - Vit
+   - [ ] todo TODO list 
+   - [ ] logger implement
+ - Polacek
+   - [x] todo TODOs list
+   - [ ] logger implement
