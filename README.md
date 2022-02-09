@@ -32,6 +32,10 @@
    - [x] todo TODOs list
    - [ ] logger implement
 
+#### PROBLÉMY:
+- ověřování, zda je emailová adresa platná 
+- scene builder je na píču a nefunguje
+
 ### Odkazy:
 - https://www.csob.cz/portal/lide/kurzovni-listek
 - https://www.rb.cz/informacni-servis/kurzovni-listek
