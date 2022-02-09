@@ -1,1 +1,2 @@
 # CurrencyWatcher
+bruh opica
