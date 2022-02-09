@@ -12,14 +12,9 @@
     </Appenders>
 
     <Loggers>
-        <Root level="ERROR">
-            <AppenderRef ref="Console"/>
-        </Root>
-        <Root level="INFO">
-            <AppenderRef ref="Console"/>
-        </Root>
         <Root level="DEBUG">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="MyFile"/>
         </Root>
 
     </Loggers>

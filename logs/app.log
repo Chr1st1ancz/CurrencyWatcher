@@ -1,0 +1,7 @@
+2022-02-09 13:53:43,309 ERROR c.l.Logging [main] Error log message
+2022-02-09 13:54:06,336 DEBUG c.l.Logging [main] Debug log message
+2022-02-09 13:54:06,346 INFO c.l.Logging [main] Info log message
+2022-02-09 13:54:06,346 ERROR c.l.Logging [main] Error log message
+2022-02-09 13:54:22,070 DEBUG c.l.Logging [main] Debug log message
+2022-02-09 13:54:22,070 INFO c.l.Logging [main] Info log message
+2022-02-09 13:54:22,070 ERROR c.l.Logging [main] Error log message
