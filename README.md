@@ -1,2 +1,2 @@
 ### Polacek
-- <a href="../blob/polacek/promenne.md">proměnné file
+- <a href="../polacek/promenne.md">proměnné file
