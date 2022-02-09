@@ -14,7 +14,7 @@
    - [ ] todo TODO list
    - [ ] logger implement
  - Mattias
-   - [ ] todo TODO list
+   - [x] todo TODO list
    - [ ] logger implement
  - Novak
    - [ ] todo TODO list
