@@ -13,6 +13,7 @@
 - Vojta začíná s loggerem, protože ho budou hned ostatní potřebovat. Čte dokumentaci
 - Mattias návrh rozložení grafiky v malování
 - Honza začíná návrhem hlavního projektu
+- 
           
 #### TODO:
  - Abraham
