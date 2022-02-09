@@ -5,3 +5,6 @@ TODO List
 - [ ] Zpracování základů
 - [ ] Graf
 - [ ] Error msg
+
+###My to zvládneme!
+> ne lol 
