@@ -8,6 +8,11 @@
 - odhad počtu hodin a ceny 
 - založen github repo 
 - začátek návrhu aplikace
+- volba H2 databáze z důvodu lepší a přehlednější dokumentace
+- otto začíná pracovat na databázi, seznámení s H2
+- Vojta začíná s loggerem, protože ho budou hned ostatní potřebovat. Čte dokumentaci
+- Mattias návrh rozložení grafiky v malování
+- Honza začíná návrhem hlavního projektu
           
 #### TODO:
  - Abraham
