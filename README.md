@@ -34,3 +34,11 @@
 | Banka č.2     | bankName2 (string)        |
 | Banka č.2 URL | bankUrl1 (string)         |
 </details>
+
+<details>
+  <summary>Database Proměnné</summary>
+  <br>
+  
+| Database: | Název proměnný (proměnná) |
+|-----------|---------------------------|
+</details>
