@@ -6,5 +6,5 @@ TODO List
 - [ ] Graf
 - [ ] Error msg
 
-###My to zvládneme!
+### My to zvládneme!
 > ne lol 
