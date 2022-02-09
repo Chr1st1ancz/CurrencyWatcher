@@ -1,3 +1,3 @@
 # CurrencyWatcher
 
-sad conke
+sad conke but when logger done no more sad conke
