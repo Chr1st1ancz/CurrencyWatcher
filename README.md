@@ -1,4 +1,7 @@
 # CurrencyWatcher
-bruh opica
+bruh opica 🦍 🦧
 TODO List
-[] Návrh GUI
+[ ] Grafický návrh 
+[ ] Zpracování základů
+[ ] Graf
+[ ] Error msg
