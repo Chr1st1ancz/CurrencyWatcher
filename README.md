@@ -2,7 +2,7 @@
 bruh opica 🦍 🦧
 TODO List
 - [x] Grafický návrh 
-- [ ] Zpracování základů - Graphical interface
+- [x] Zpracování základů - Graphical interface
 - [ ] Graf 
 - [ ] Error msg
 - [ ] UI JavaFX - propojení FXML s Controllerem (práce s Honzou)
