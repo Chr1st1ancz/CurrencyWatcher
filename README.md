@@ -1,3 +1,3 @@
 # CurrencyWatcher
 
-mailsender dan
+logger + config + mailsender ✔️ 
