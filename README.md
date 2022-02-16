@@ -14,6 +14,11 @@
 - Mattias návrh rozložení grafiky v malování
 - Honza začíná návrhem hlavního projektu
 - Mattias začíná dělat scene builder
+
+#### 16.2.2022
+- Vít dělal konfiguraci, kterou tímto dnem dokončil, celkový čas 1 hodina
+- Abraham upravoval mailsender, který tímto dnem dokončil, celkový čas 3 hodiny
+- Dnes chybí Schon, Novák a Poláček
           
 #### TODO:
  - Abraham
