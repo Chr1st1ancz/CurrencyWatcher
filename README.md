@@ -18,7 +18,8 @@
 #### 16.2.2022
 - Vít dělal konfiguraci, kterou tímto dnem dokončil, celkový čas 1 hodina
 - Abraham upravoval mailsender, který tímto dnem dokončil, celkový čas 3 hodiny
-- Dnes chybí Schon, Novák a Poláček
+- Dnes chybí Schön, Novák a Poláček
+- Schön přišel po odpolední pauze
           
 #### TODO:
  - Abraham
