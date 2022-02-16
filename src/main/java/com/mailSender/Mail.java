@@ -1,4 +1,4 @@
-package com.company;
+package com.mailSender;
 
 public class Mail {
     private String to;

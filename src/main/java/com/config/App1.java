@@ -1,8 +1,8 @@
 package com.config;
 
-import com.company.Mail;
-import com.company.MailService;
-import com.company.SimpleMailService;
+import com.mailSender.Mail;
+import com.mailSender.MailService;
+import com.mailSender.SimpleMailService;
 
 import java.io.IOException;
 import java.io.InputStream;

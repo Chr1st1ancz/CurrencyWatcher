@@ -1,4 +1,8 @@
-package com.company;
+package com.mailSender;
+
+import com.logging.Logging;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.mail.Message;
 import javax.mail.PasswordAuthentication;
@@ -9,19 +13,23 @@ import javax.mail.internet.MimeMessage;
 import java.util.Date;
 import java.util.Properties;
 
-import com.config.App1;
-
 public class SimpleMailService implements MailService {
 
+    public static final String MAIL_USER_NAME = "mail.user.name";
+    public static final String MAIL_USER_PASSWORD = "mail.user.password";
+    private static Logger logger = LogManager.getLogger(SimpleMailService.class);
+
     private Session mailSession;
+    private Properties properties;
 
     public SimpleMailService(Properties prop) {
+        this.properties = prop;
         initMailSession(prop);
     }
 
     private void initMailSession(Properties prop) {
-        String username = prop.getProperty("mail.user.name");
-        String password = prop.getProperty("mail.user.password");
+        String username = prop.getProperty(MAIL_USER_NAME);
+        String password = prop.getProperty(MAIL_USER_PASSWORD);
         this.mailSession = Session.getInstance(prop, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(username, password);
@@ -31,11 +39,12 @@ public class SimpleMailService implements MailService {
        // mailSession.setDebug(true);
     }
 
-    @Override
+
     public void send(Mail mail) {
+        logger.info("Odesílá se mail");
         try {
             Message msg = new MimeMessage(mailSession);
-            msg.setFrom(new InternetAddress("KartingWithMazlik"));
+            msg.setFrom(new InternetAddress(this.properties.getProperty(MAIL_USER_PASSWORD)));
             msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mail.getTo()));
             msg.setSentDate(new Date());
             msg.setSubject(mail.getSubject());
@@ -44,9 +53,9 @@ public class SimpleMailService implements MailService {
 
             Transport.send(msg);
 
-        }catch(Exception E){
-            System.out.println("Nevalí to :(");
-            System.out.println(E);
+        } catch(Exception E){
+            logger.error("Odesílání mailu se pojebalo");
         }
+        logger.debug("Success");
     }
 }

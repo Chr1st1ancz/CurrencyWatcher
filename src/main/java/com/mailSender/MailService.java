@@ -1,4 +1,4 @@
-package com.company;
+package com.mailSender;
 
 public interface MailService {
 
