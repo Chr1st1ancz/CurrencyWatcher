@@ -9,7 +9,7 @@
 #### CONFIG - ✔️ (16.02.2022)
 
   - started: 16.02.2022
-  - real time. 1h
+  - real time: 1h
   - expected time: 8h
 
 ![image](https://user-images.githubusercontent.com/90755402/154239783-cea5a24a-417f-41b9-87ae-cdc3603e2c5f.png)
