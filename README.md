@@ -1,3 +1,7 @@
 # CurrencyWatcher
 
-sad conke but when logger done no more sad conke
+#### LOGGER - ✔️
+
+#### CONFIG - ✔️
+
+sad conke but when logger and config done no more sad conke
