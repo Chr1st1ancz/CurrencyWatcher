@@ -8,31 +8,23 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Date;
 import java.util.Properties;
-import com.company.Mail;
+
+import com.config.App1;
 
 public class SimpleMailService implements MailService {
 
     private Session mailSession;
 
-    public SimpleMailService() {
-        initMailSession();
+    public SimpleMailService(Properties prop) {
+        initMailSession(prop);
     }
 
-    private void initMailSession() {
-        String host = "smtp.gmail.com";
-
-        Properties props = new Properties();
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", true);
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", host);
-        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
-        props.put("mail.smtp.port", 587);
-        props.put("mail.smtp.ssl.trust", host);
-        this.mailSession = Session.getInstance(props, new javax.mail.Authenticator() {
-
+    private void initMailSession(Properties prop) {
+        String username = prop.getProperty("mail.user.name");
+        String password = prop.getProperty("mail.user.password");
+        this.mailSession = Session.getInstance(prop, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("currencywatcher2022@gmail.com", "KartingWithMazlik");
+                return new PasswordAuthentication(username, password);
             }
         });
 

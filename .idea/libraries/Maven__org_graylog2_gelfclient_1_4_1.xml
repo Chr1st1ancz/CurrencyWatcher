@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.graylog2:gelfclient:1.4.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/graylog2/gelfclient/1.4.1/gelfclient-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/graylog2/gelfclient/1.4.1/gelfclient-1.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/graylog2/gelfclient/1.4.1/gelfclient-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
