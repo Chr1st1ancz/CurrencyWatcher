@@ -1,5 +1,7 @@
 # CurrencyWatcher
 
+<br><br><br>
+
 #### LOGGER - ✔️ (09.02.2022) 
 
   - started: 09.02.2022
