@@ -11,7 +11,7 @@ import java.util.Properties;
 
 public class MailTest {
 
-    public static void main(String[] args) {
+    public static void Start() {
 
         try(InputStream input = MailTest.class.getClassLoader().getResourceAsStream("config.properties")){
 
