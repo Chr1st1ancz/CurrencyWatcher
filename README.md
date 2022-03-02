@@ -20,27 +20,34 @@
 - Abraham upravoval mailsender, který tímto dnem dokončil, celkový čas 3 hodiny
 - Dnes chybí Schön, Novák a Poláček
 - Schön přišel po odpolední pauze
+
+#### 02.3.2022 (první 2 hodinovka)
+- Novák - graf (java fx)
+- Poláček - struktura projektu
+- Otto - databáze 
+- Abraham - merging branchů
+- Vít - volno
+- Demjan - volno
           
 #### TODO:
  - Abraham
-   - [ ] todo TODO list
-   - [ ] logger implement
+   - [x] mailsender
+   - [x] logger implement
+   - [x] merge Vít - Abraham
+   - [x] merge Vít+Abraham+Poláček
+   - [ ] 
  - Mattias
    - [x] todo TODO list
-   - [ ] logger implement
  - Novak
    - [ ] todo TODO list
-   - [ ] logger implement
  - Vit
    - [ ] todo TODO list 
-   - [ ] logger implement
  - Polacek
    - [x] todo TODOs list
-   - [ ] logger implement
 
 #### PROBLÉMY:
-- ověřování, zda je emailová adresa platná 
-- scene builder je na píču a nefunguje
+- [x] ověřování, zda je emailová adresa platná 
+- [ ] scene builder je na píču a nefunguje
 
 ### Odkazy:
 - https://www.csob.cz/portal/lide/kurzovni-listek
