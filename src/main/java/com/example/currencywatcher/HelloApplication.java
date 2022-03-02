@@ -1,10 +1,13 @@
 package com.example.currencywatcher;
 
 import com.example.currencywatcher.database.Database;
+import com.example.currencywatcher.entity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
+import org.h2.engine.User;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -12,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HelloApplication extends Application {
-    public static String email = "";
+    public static UserEntity user;
     public static Map currencyMap = new HashMap();
     @Override
     public void start(Stage stage) throws IOException {
@@ -24,7 +27,7 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) throws SQLException {
-        Database.startDBServer();
+        new Database().startDBServer();
         launch();
     }
 }

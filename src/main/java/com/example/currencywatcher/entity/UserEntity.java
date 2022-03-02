@@ -1,19 +1,15 @@
 package com.example.currencywatcher.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashMap;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
 public class UserEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "user_id")
     private int id;
 
     @Column(name = "first_name")
@@ -25,8 +21,13 @@ public class UserEntity {
     @Column(name = "email")
     private String email;
 
-    //@Column(name = "watched_currencies")
-    //private HashMap<String, Boolean> watchedCurrencies;
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(
+            name = "watchedCurrencies",
+            joinColumns = { @JoinColumn(name = "user_id") },
+            inverseJoinColumns = { @JoinColumn(name = "currency_id") }
+    )
+    private Set<CurrencyCodeEntity> watchedCurrencies;
 
     public UserEntity(){
 
