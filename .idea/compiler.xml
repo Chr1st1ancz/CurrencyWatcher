@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CurrencyWatcher" />
+        <module name="Currency Watcher" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CurrencyWatcher" target="16" />
+      <module name="Currency Watcher" target="16" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Currency Watcher" options="" />
+    </option>
   </component>
 </project>
