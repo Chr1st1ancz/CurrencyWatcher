@@ -1,4 +1,4 @@
-package cz.spsmb.mailSender;
+package cz.spsmb.service;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

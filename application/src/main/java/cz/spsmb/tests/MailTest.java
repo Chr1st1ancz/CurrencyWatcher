@@ -1,19 +1,19 @@
-package cz.spsmb.config;
+package cz.spsmb.tests;
 
-import cz.spsmb.mailSender.Mail;
-import cz.spsmb.mailSender.MailService;
-import cz.spsmb.mailSender.SimpleMailService;
+import cz.spsmb.service.Mail;
+import cz.spsmb.service.MailService;
+import cz.spsmb.service.SimpleMailService;
 
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class App1 {
+public class MailTest {
 
     public static void main(String[] args) {
 
-        try(InputStream input = App1.class.getClassLoader().getResourceAsStream("config.properties")){
+        try(InputStream input = MailTest.class.getClassLoader().getResourceAsStream("config.properties")){
 
             if (input == null) {
                 System.out.println("Sorry, unable to find config.properties");
