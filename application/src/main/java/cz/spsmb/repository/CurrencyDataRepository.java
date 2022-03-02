@@ -1,6 +1,6 @@
-package cz.spsmb.repository;
+package main.java.cz.spsmb.repository;
 
-import cz.spsmb.entity.CurrencyEntity;
+import main.java.cz.spsmb.entity.CurrencyEntity;
 
 public interface CurrencyDataRepository {
 
