@@ -44,5 +44,6 @@ public class HelloController {
         stage.setScene(scene);
         stage.initModality(Modality.NONE);
         stage.show();
+        System.out.println("SSSS");
     }
 }
