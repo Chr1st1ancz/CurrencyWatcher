@@ -1,8 +1,9 @@
-package com.config;
+package cz.spsmb.config;
 
-import com.mailSender.Mail;
-import com.mailSender.MailService;
-import com.mailSender.SimpleMailService;
+import cz.spsmb.mailSender.Mail;
+import cz.spsmb.mailSender.MailService;
+import cz.spsmb.mailSender.SimpleMailService;
+
 
 import java.io.IOException;
 import java.io.InputStream;

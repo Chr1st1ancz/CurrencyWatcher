@@ -1,4 +1,4 @@
-package cz.spsmb.entity;
+package main.java.cz.spsmb.entity;
 
 public class CurrencyEntity {
 

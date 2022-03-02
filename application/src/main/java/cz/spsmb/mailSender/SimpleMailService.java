@@ -1,9 +1,7 @@
-package com.mailSender;
+package cz.spsmb.mailSender;
 
-import com.logging.Logging;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import javax.mail.Message;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;

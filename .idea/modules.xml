@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CurrencyWatcher.iml" filepath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application/CurrencyWatcher.iml" filepath="$PROJECT_DIR$/application/CurrencyWatcher.iml" />
     </modules>
   </component>
 </project>

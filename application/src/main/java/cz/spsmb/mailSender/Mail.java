@@ -1,4 +1,4 @@
-package com.mailSender;
+package cz.spsmb.mailSender;
 
 public class Mail {
     private String to;
