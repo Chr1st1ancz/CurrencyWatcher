@@ -16,6 +16,7 @@ public class HelloApplication extends Application {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        /*** Zčekovat zda-li není banka down -> pokud je tak spustit popUp ***/
     }
 
     public static void main(String[] args) {

@@ -12,14 +12,17 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.HelloController">
    <children>
       <Button fx:id="CurrencyBTN" layoutX="154.0" layoutY="661.0" mnemonicParsing="false" onAction="#openCurrencyReminder" text="CURRENCY REMINDER SETTINGS" />
-      <LineChart fx:id="graph" layoutX="17.0" layoutY="267.0" prefHeight="387.0" prefWidth="467.0">
-        <xAxis>
-          <CategoryAxis side="BOTTOM" fx:id="xChart" />
-        </xAxis>
-        <yAxis>
-          <NumberAxis fx:id="yChart" side="LEFT" />
-        </yAxis>
+
+      <LineChart fx:id="graph" layoutX="17.0" layoutY="267.0" prefHeight="387.0" prefWidth="467.0" >
+         <xAxis>
+            <NumberAxis side="BOTTOM" fx:id="xChart" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yChart" side="LEFT" />
+         </yAxis>
       </LineChart>
+
+
       <Label layoutX="79.0" layoutY="54.0" text="EUR" />
       <Label layoutX="79.0" layoutY="104.0" text="GBP" />
       <Label layoutX="79.0" layoutY="154.0" text="HRK" />
