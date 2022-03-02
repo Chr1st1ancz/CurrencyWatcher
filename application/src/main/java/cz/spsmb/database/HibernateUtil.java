@@ -1,4 +1,4 @@
-package com.example.currencywatcher.database;
+package cz.spsmb.database;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

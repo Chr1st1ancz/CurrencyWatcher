@@ -7,3 +7,5 @@
 2022-02-09 13:54:22,070 ERROR c.l.Logging [main] Error log message
 2022-03-02 10:32:18,553 INFO c.s.m.SimpleMailService [main] Odesílá se mail
 2022-03-02 10:32:29,089 DEBUG c.s.m.SimpleMailService [main] Success
+2022-03-02 13:40:15,048 INFO c.s.s.SimpleMailService [main] Odesílá se mail
+2022-03-02 13:40:26,604 DEBUG c.s.s.SimpleMailService [main] Success

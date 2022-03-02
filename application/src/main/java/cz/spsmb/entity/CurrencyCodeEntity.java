@@ -1,6 +1,4 @@
-package com.example.currencywatcher.entity;
-
-import org.h2.engine.User;
+package cz.spsmb.entity;
 
 import javax.persistence.*;
 import java.util.List;

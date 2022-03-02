@@ -27,6 +27,12 @@ public class MailTest {
             mailSend.setBody("Success");
             MailService mailService = new SimpleMailService(prop);
             mailService.send(mailSend);
+
+            Mail mailSend2 = new Mail();
+            mailSend2.setTo("minecaft0018@email.cz");
+            mailSend2.setSubject("Mailsender Test");
+            mailSend2.setBody("Success2");
+            mailService.send(mailSend2);
         } catch (IOException ex) {
             ex.printStackTrace();
         }

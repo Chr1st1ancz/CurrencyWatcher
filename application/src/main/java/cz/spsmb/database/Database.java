@@ -1,13 +1,13 @@
-package com.example.currencywatcher.database;
+package cz.spsmb.database;
 
-import com.example.currencywatcher.entity.UserEntity;
+import cz.spsmb.entity.UserEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import static com.example.currencywatcher.HelloApplication.user;
+import static cz.spsmb.start.HelloApplication.user;
 
 public class Database {
     private Session session;

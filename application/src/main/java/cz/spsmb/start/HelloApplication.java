@@ -1,13 +1,11 @@
-package com.example.currencywatcher;
+package cz.spsmb.start;
 
-import com.example.currencywatcher.database.Database;
-import com.example.currencywatcher.entity.UserEntity;
+import cz.spsmb.database.Database;
+import cz.spsmb.entity.UserEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
-import org.h2.engine.User;
 
 import java.io.IOException;
 import java.sql.SQLException;

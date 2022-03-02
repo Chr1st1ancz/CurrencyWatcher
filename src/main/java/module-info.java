@@ -9,7 +9,7 @@ module com.example.currencywatcher {
     requires java.naming;
 
 
-    opens com.example.currencywatcher to javafx.fxml;
-    opens com.example.currencywatcher.entity to org.hibernate.orm.core;
-    exports com.example.currencywatcher;
+    opens cz.spsmb.start to javafx.fxml;
+    opens cz.spsmb.entity to org.hibernate.orm.core;
+    exports cz.spsmb.start;
 }

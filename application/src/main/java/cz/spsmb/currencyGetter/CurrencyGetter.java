@@ -1,4 +1,4 @@
-package com.example.currencywatcher.currencyGetter;
+package cz.spsmb.currencyGetter;
 
 public class CurrencyGetter {
     //https://www.rb.cz/frontend-controller/backend-data/currency/listActual/v1?attachment=true&date=2022-02-09

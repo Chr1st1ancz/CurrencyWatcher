@@ -23,7 +23,7 @@
         <property name="hibernate.dbcp.maxIdle">10</property>
         <property name="hibernate.dbcp.minIdle">5</property>
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
-        <mapping class="com.example.currencywatcher.entity.UserEntity" />
-        <mapping class="com.example.currencywatcher.entity.CurrencyCodeEntity" />
+        <mapping class="cz.spsmb.entity.UserEntity" />
+        <mapping class="cz.spsmb.entity.CurrencyCodeEntity" />
     </session-factory>
 </hibernate-configuration>

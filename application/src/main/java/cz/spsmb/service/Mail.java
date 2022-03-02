@@ -6,6 +6,7 @@ public class Mail {
     private String body;
 
     public Mail() {
+
     }
 
     public String getTo() {

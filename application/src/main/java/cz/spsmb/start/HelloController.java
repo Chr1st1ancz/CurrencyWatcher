@@ -1,4 +1,4 @@
-package com.example.currencywatcher;
+package cz.spsmb.start;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

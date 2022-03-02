@@ -1,7 +1,6 @@
-package com.example.currencywatcher.entity;
+package cz.spsmb.entity;
 
 import javax.persistence.*;
-import java.util.HashMap;
 import java.util.Set;
 
 @Entity
