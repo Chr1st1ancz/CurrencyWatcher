@@ -1,4 +1,9 @@
 # CurrencyWatcher
+
+#### 02.03.2022
+- Merge Otto branch, Abraham, Vít, Poláček
+
+
 <details>
   <summary>Uživatel databáze</summary>
   <br>
