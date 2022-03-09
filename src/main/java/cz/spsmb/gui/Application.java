@@ -1,4 +1,4 @@
-package com.example.gui;
+package cz.spsmb.gui;
 
 public class Application {
 

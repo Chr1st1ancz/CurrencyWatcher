@@ -1,4 +1,4 @@
-package com.example.gui;
+package cz.spsmb.gui;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;

@@ -1,4 +1,4 @@
-package com.example.gui;
+package cz.spsmb.gui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
