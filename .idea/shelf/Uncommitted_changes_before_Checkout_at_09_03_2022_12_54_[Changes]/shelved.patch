@@ -1,0 +1,39 @@
+Index: src/main/java/com/example/gui/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.gui;\r\n\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.chart.LineChart;\r\nimport javafx.scene.chart.NumberAxis;\r\nimport javafx.scene.chart.XYChart;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.Label;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.stage.Modality;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class HelloController implements Initializable {\r\n    final static String EUR = \"EUR\";\r\n    final static String GBP = \"GBP\";\r\n    final static String HRK = \"HRK\";\r\n    final static String USD = \"USD\";\r\n    final static String CHF = \"CHF\";\r\n    final static String PLN = \"PLN\";\r\n    @FXML\r\n    private TextField GBPinput;\r\n    @FXML\r\n    private TextField HRKinput;\r\n    @FXML\r\n    private TextField USDinput;\r\n    @FXML\r\n    private TextField CHFinput;\r\n    @FXML\r\n    private TextField PLNinput;\r\n    @FXML\r\n    private TextField HUFinput;\r\n    @FXML\r\n    private TextField EURinput;\r\n    @FXML\r\n    private TextField lastUpdate;\r\n    @FXML\r\n    private Button CurrencyBTN;\r\n    @FXML\r\n    private Label welcomeText;\r\n    @FXML\r\n    private LineChart graph;\r\n\r\n    @FXML\r\n    public void openCurrencyReminder(ActionEvent actionEvent) throws IOException {\r\n        Parent fxmlLoader = FXMLLoader.load(getClass().getResource(\"CurrencyReminder.fxml\"));\r\n        Stage stage = new Stage();\r\n        Scene scene = new Scene(fxmlLoader);\r\n        stage.setTitle(\"Hello!\");\r\n        stage.setScene(scene);\r\n        stage.initModality(Modality.NONE);\r\n        stage.show();\r\n    }\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n\r\n\r\n        final NumberAxis xChart = new NumberAxis();\r\n        final NumberAxis yChart = new NumberAxis();\r\n        graph.setTitle(\"Currency watcher\");\r\n        xChart.setLabel(\"date\");\r\n        yChart.setLabel(\"value\");\r\n        XYChart.Series series1 = new XYChart.Series();\r\n        series1.setName(EUR);\r\n        series1.getData().add(new XYChart.Data(1,2 ));\r\n        XYChart.Series series2 = new XYChart.Series();\r\n        series2.setName(GBP);\r\n        series2.getData().add(new XYChart.Data(3, 5));\r\n        XYChart.Series series3 = new XYChart.Series();\r\n        series3.setName(HRK);\r\n        series3.getData().add(new XYChart.Data(2,5 ));\r\n        XYChart.Series series4 = new XYChart.Series();\r\n        series4.setName(USD);\r\n        series4.getData().add(new XYChart.Data(2,4 ));\r\n        XYChart.Series series5 = new XYChart.Series();\r\n        series5.setName(CHF);\r\n        series5.getData().add(new XYChart.Data(6,5 ));\r\n        XYChart.Series series6 = new XYChart.Series();\r\n        series6.setName(PLN);\r\n        series6.getData().add(new XYChart.Data(8,5 ));\r\n        graph.getData().add(series1);\r\n        graph.getData().add(series2);\r\n        graph.getData().add(series3);\r\n        graph.getData().add(series4);\r\n        graph.getData().add(series5);\r\n        graph.getData().add(series6);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/gui/HelloController.java b/src/main/java/com/example/gui/HelloController.java
+--- a/src/main/java/com/example/gui/HelloController.java	(revision 5894bb2e488726803fb3576e8bf15e920a9b50ab)
++++ b/src/main/java/com/example/gui/HelloController.java	(date 1646826809378)
+@@ -70,22 +70,22 @@
+         yChart.setLabel("value");
+         XYChart.Series series1 = new XYChart.Series();
+         series1.setName(EUR);
+-        series1.getData().add(new XYChart.Data(1,2 ));
++        series1.getData().add(new XYChart.Data(9,26));
+         XYChart.Series series2 = new XYChart.Series();
+         series2.setName(GBP);
+-        series2.getData().add(new XYChart.Data(3, 5));
++        series2.getData().add(new XYChart.Data(9,5));
+         XYChart.Series series3 = new XYChart.Series();
+         series3.setName(HRK);
+-        series3.getData().add(new XYChart.Data(2,5 ));
++        series3.getData().add(new XYChart.Data(9,8 ));
+         XYChart.Series series4 = new XYChart.Series();
+         series4.setName(USD);
+-        series4.getData().add(new XYChart.Data(2,4 ));
++        series4.getData().add(new XYChart.Data(9,24 ));
+         XYChart.Series series5 = new XYChart.Series();
+         series5.setName(CHF);
+-        series5.getData().add(new XYChart.Data(6,5 ));
++        series5.getData().add(new XYChart.Data(9,13 ));
+         XYChart.Series series6 = new XYChart.Series();
+         series6.setName(PLN);
+-        series6.getData().add(new XYChart.Data(8,5 ));
++        series6.getData().add(new XYChart.Data(9,5 ));
+         graph.getData().add(series1);
+         graph.getData().add(series2);
+         graph.getData().add(series3);
