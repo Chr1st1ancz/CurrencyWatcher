@@ -12,6 +12,7 @@
     <bytecodeTargetLevel>
       <module name="Currency Watcher" target="16" />
       <module name="CurrencyWatcher" target="16" />
+      <module name="CurrencyWatcher (1)" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

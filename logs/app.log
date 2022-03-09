@@ -9,3 +9,7 @@
 2022-03-02 10:32:29,089 DEBUG c.s.m.SimpleMailService [main] Success
 2022-03-02 13:40:15,048 INFO c.s.s.SimpleMailService [main] Odesílá se mail
 2022-03-02 13:40:26,604 DEBUG c.s.s.SimpleMailService [main] Success
+2022-03-09 11:03:12,310 INFO c.s.s.SimpleMailService [main] Odesílá se mail
+2022-03-09 11:03:22,946 DEBUG c.s.s.SimpleMailService [main] Success
+2022-03-09 11:03:22,946 INFO c.s.s.SimpleMailService [main] Odesílá se mail
+2022-03-09 11:03:28,516 DEBUG c.s.s.SimpleMailService [main] Success
