@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="asd">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/CurrencyReminderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/CurrencyReminderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/GuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gui/popUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/popUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/CurrencyReminder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cz/spsmb/gui/CurrencyReminder.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cz/spsmb/gui/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gui/popUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cz/spsmb/gui/popUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_53_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_53__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +30,22 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="negrABRAHAM_+_UI" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="16" />
@@ -58,13 +70,26 @@
       <recent name="C:\Users\mattias.demjan\IdeaProjects\CurrencyWatcher" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application (1)">
+  <component name="RunManager" selected="Application.Application (2)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cz.spsmb.gui.Application" />
       <module name="CurrencyWatcher" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cz.spsmb.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cz.spsmb.Application" />
+      <module name="CurrencyWatcher" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.spsmb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.gui.GuiApplication" />
+    <configuration name="Logger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cz.spsmb.modules.Logger" />
       <module name="CurrencyWatcher" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.gui.*" />
+          <option name="PATTERN" value="cz.spsmb.modules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,10 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application (2)" />
+        <item itemvalue="Application.Logger" />
         <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.GuiApplication (1)" />
-        <item itemvalue="Application.GuiApplication" />
         <item itemvalue="Application.GuiApplication (1)" />
       </list>
     </recent_temporary>
@@ -134,6 +159,8 @@
       <workItem from="1646816458009" duration="131000" />
       <workItem from="1646816610398" duration="520000" />
       <workItem from="1646817165199" duration="3936000" />
+      <workItem from="1648627449408" duration="4484000" />
+      <workItem from="1648635796411" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1646817831905</created>

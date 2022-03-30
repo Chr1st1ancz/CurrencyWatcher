@@ -17,3 +17,69 @@
 2022-03-09 11:06:23,595 DEBUG c.s.s.SimpleMailService [main] Success
 2022-03-09 11:06:23,611 INFO c.s.s.SimpleMailService [main] Odesílá se mail
 2022-03-09 11:06:29,090 DEBUG c.s.s.SimpleMailService [main] Success
+2022-03-30 10:28:19,629 INFO c.s.s.m.SimpleMailService [main] Odesílá se mail
+2022-03-30 10:28:30,578 DEBUG c.s.s.m.SimpleMailService [main] Success
+2022-03-30 10:28:30,578 INFO c.s.s.m.SimpleMailService [main] Odesílá se mail
+2022-03-30 10:28:36,563 DEBUG c.s.s.m.SimpleMailService [main] Success
+2022-03-30 10:39:29,425 DEBUG c.s.m.Logger [main] Debug log message
+2022-03-30 10:39:29,427 INFO c.s.m.Logger [main] Info log message
+2022-03-30 10:39:29,428 ERROR c.s.m.Logger [main] Error log message
+2022-03-30 10:56:03,622 DEBUG c.s.m.Logger [main] Debug log message
+2022-03-30 10:56:03,622 INFO c.s.m.Logger [main] Info log message
+2022-03-30 10:56:03,622 ERROR c.s.m.Logger [main] Error log message
+2022-03-30 10:56:29,550 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 10:57:10,324 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:05:43,159 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:13:26,799 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:13:26,799 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:13:50,627 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:13:50,627 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:14:03,352 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:14:03,352 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:14:15,078 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:14:15,078 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:15:03,288 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:15:03,309 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:16:47,333 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:16:47,348 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:16:47 CEST 2022)
+2022-03-30 11:20:38,978 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:20:38,988 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:20:38 CEST 2022)
+2022-03-30 11:21:39,700 DEBUG c.s.s.m.SimpleMailService [main] Looper Ended
+2022-03-30 11:22:16,695 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:22:16,711 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:22:16 CEST 2022)
+2022-03-30 11:23:16,803 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:23:16,805 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:16 CEST 2022)
+2022-03-30 11:23:23,859 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 11:23:23,859 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:23 CEST 2022)
+2022-03-30 11:23:30,536 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:30 CEST 2022)
+2022-03-30 11:23:36,649 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:36 CEST 2022)
+2022-03-30 11:23:42,764 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:42 CEST 2022)
+2022-03-30 11:23:48,874 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:48 CEST 2022)
+2022-03-30 11:23:55,017 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:23:55 CEST 2022)
+2022-03-30 11:24:01,149 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:01 CEST 2022)
+2022-03-30 11:24:07,264 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:07 CEST 2022)
+2022-03-30 11:24:13,402 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:13 CEST 2022)
+2022-03-30 11:24:19,539 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:19 CEST 2022)
+2022-03-30 11:24:25,685 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:25 CEST 2022)
+2022-03-30 11:24:31,801 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:31 CEST 2022)
+2022-03-30 11:24:37,927 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:37 CEST 2022)
+2022-03-30 11:24:44,067 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:44 CEST 2022)
+2022-03-30 11:24:50,194 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:50 CEST 2022)
+2022-03-30 11:24:56,401 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:24:56 CEST 2022)
+2022-03-30 11:25:02,505 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:02 CEST 2022)
+2022-03-30 11:25:08,637 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:08 CEST 2022)
+2022-03-30 11:25:14,816 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:14 CEST 2022)
+2022-03-30 11:25:20,940 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:20 CEST 2022)
+2022-03-30 11:25:27,444 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:27 CEST 2022)
+2022-03-30 11:25:33,570 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:33 CEST 2022)
+2022-03-30 11:25:39,691 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:39 CEST 2022)
+2022-03-30 11:25:45,816 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:45 CEST 2022)
+2022-03-30 11:25:51,950 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:51 CEST 2022)
+2022-03-30 11:25:58,088 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:25:58 CEST 2022)
+2022-03-30 11:26:04,219 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:04 CEST 2022)
+2022-03-30 11:26:10,339 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:10 CEST 2022)
+2022-03-30 11:26:16,465 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:16 CEST 2022)
+2022-03-30 11:26:22,584 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:22 CEST 2022)
+2022-03-30 11:26:29,062 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:29 CEST 2022)
+2022-03-30 11:26:37,929 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:37 CEST 2022)
+2022-03-30 11:26:44,154 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:44 CEST 2022)
