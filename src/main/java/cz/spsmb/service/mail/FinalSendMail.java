@@ -1,17 +1,14 @@
-package cz.spsmb.tests;
+package cz.spsmb.service.mail;
 
-import cz.spsmb.service.mail.Mail;
-import cz.spsmb.service.mail.MailService;
-import cz.spsmb.service.mail.SimpleMailService;
-
+import cz.spsmb.tests.MailTest;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class MailTest {
+public class FinalSendMail {
 
-    public static void Start() {
+    public static void send(String mailTo, String mailSubject, String mailBody) {
 
         try(InputStream input = MailTest.class.getClassLoader().getResourceAsStream("config.properties")){
 
@@ -19,20 +16,16 @@ public class MailTest {
                 System.out.println("Sorry, unable to find config.properties");
                 return;
             }
+
             Properties prop = new Properties();
             prop.load(input);
             Mail mailSend = new Mail();
-            mailSend.setTo("christian.abraham@email.cz");
-            mailSend.setSubject("Mailsender Test");
-            mailSend.setBody("Success");
+            mailSend.setTo(mailTo);
+            mailSend.setSubject(mailSubject);
+            mailSend.setBody(mailBody);
             MailService mailService = new SimpleMailService(prop);
             mailService.send(mailSend);
 
-            Mail mailSend2 = new Mail();
-            mailSend2.setTo("minecaft0018@email.cz");
-            mailSend2.setSubject("Mailsender Test");
-            mailSend2.setBody("Success2");
-            mailService.send(mailSend2);
         } catch (IOException ex) {
             ex.printStackTrace();
         }

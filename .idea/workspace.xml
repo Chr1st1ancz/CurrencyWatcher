@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="asd">
-      <change beforePath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_53_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_53__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_54_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_03_2022_12_54__Changes_.xml" beforeDir="false" />
+    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Megeruju to ok?&#10;- PLS MARGE asi">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/job/DataJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/FinalSendMail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/data/CSOBDataConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/data/CSOBDataConvertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/tests/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/tests/MailTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/GuiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/GuiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/HelloController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +48,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -139,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application (2)" />
-        <item itemvalue="Application.Logger" />
         <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="Application.GuiApplication (1)" />
+        <item itemvalue="Application.Logger" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +165,8 @@
       <workItem from="1646816610398" duration="520000" />
       <workItem from="1646817165199" duration="3936000" />
       <workItem from="1648627449408" duration="4484000" />
-      <workItem from="1648635796411" duration="298000" />
+      <workItem from="1648635796411" duration="692000" />
+      <workItem from="1648636524935" duration="4754000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1646817831905</created>
@@ -169,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646817831905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Megeruju to ok?&#10;- PLS MARGE asi">
+      <created>1648636133602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648636133602</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+    <MESSAGE value="Megeruju to ok?&#10;- PLS MARGE asi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Megeruju to ok?&#10;- PLS MARGE asi" />
   </component>
 </project>

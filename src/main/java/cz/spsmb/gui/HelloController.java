@@ -61,8 +61,6 @@ public class HelloController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
         final NumberAxis xChart = new NumberAxis();
         final NumberAxis yChart = new NumberAxis();
         graph.setTitle("Currency watcher");

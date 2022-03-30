@@ -83,3 +83,97 @@
 2022-03-30 11:26:29,062 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:29 CEST 2022)
 2022-03-30 11:26:37,929 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:37 CEST 2022)
 2022-03-30 11:26:44,154 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 11:26:44 CEST 2022)
+2022-03-30 12:39:07,921 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 12:39:07,921 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 12:39:07 CEST 2022)
+2022-03-30 12:41:25,038 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 12:41:25,038 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 12:41:25 CEST 2022)
+2022-03-30 12:44:11,902 DEBUG c.s.s.m.SimpleMailService [JavaFX Application Thread] Looper Start
+2022-03-30 12:44:11,904 DEBUG c.s.s.m.SimpleMailService [JavaFX Application Thread] Looper - new Loop (Wed Mar 30 12:44:11 CEST 2022)
+2022-03-30 12:46:28,810 DEBUG c.s.s.m.SimpleMailService [main] Looper Start
+2022-03-30 12:46:28,810 DEBUG c.s.s.m.SimpleMailService [main] Looper - new Loop (Wed Mar 30 12:46:28 CEST 2022)
+2022-03-30 12:57:13,691 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start - Wed Mar 30 12:57:13 CEST 2022
+2022-03-30 12:57:52,806 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 12:57:59,554 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 12:58:05,672 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 12:58:11,804 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 12:59:32,811 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:02:48,492 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:02:55,366 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:03:01,487 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:08:52,233 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:09:25,679 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:09:56,519 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:11:46,334 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:11:46,334 DEBUG c.s.s.m.SimpleMailService [Thread-0]  - next loop : 0.5
+2022-03-30 13:12:01,968 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:12:01,968 DEBUG c.s.s.m.SimpleMailService [Thread-0] * next loop : 0.5
+2022-03-30 13:12:32,542 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start
+2022-03-30 13:12:32,558 DEBUG c.s.s.m.SimpleMailService [Thread-0] * next loop in 0.5 minutes
+2022-03-30 13:13:00,998 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.5 minutes)
+2022-03-30 13:13:20,208 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.1 minutes)
+2022-03-30 13:14:08,573 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.1 minutes (6000.0 milliseconds))
+2022-03-30 13:14:34,690 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.1 minutes)
+2022-03-30 13:14:41,472 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.1 minutes)
+2022-03-30 13:14:47,591 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper start (next loop in 0.1 minutes)
+2022-03-30 13:14:59,450 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:15:06,232 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:15:12,328 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:15:18,444 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:15:24,555 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:15:30,686 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper (next loop in 0.1 minutes)
+2022-03-30 13:16:32,777 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:16:52,851 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:16:59,640 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[2] (next loop in 0.1 minutes)
+2022-03-30 13:17:05,756 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[3] (next loop in 0.1 minutes)
+2022-03-30 13:17:11,878 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[4] (next loop in 0.1 minutes)
+2022-03-30 13:17:17,982 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[5] (next loop in 0.1 minutes)
+2022-03-30 13:17:24,104 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[6] (next loop in 0.1 minutes)
+2022-03-30 13:17:30,215 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[7] (next loop in 0.1 minutes)
+2022-03-30 13:17:36,327 DEBUG c.s.s.m.SimpleMailService [Thread-0] looper[8] (next loop in 0.1 minutes)
+2022-03-30 13:19:29,418 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:19:36,172 DEBUG c.s.j.DataJob [Thread-0] looper[2] (next loop in 0.1 minutes)
+2022-03-30 13:19:42,271 DEBUG c.s.j.DataJob [Thread-0] looper[3] (next loop in 0.1 minutes)
+2022-03-30 13:19:48,390 DEBUG c.s.j.DataJob [Thread-0] looper[4] (next loop in 0.1 minutes)
+2022-03-30 13:21:26,673 DEBUG c.s.Application [main] application started - Wed Mar 30 13:21:26 CEST 2022
+2022-03-30 13:21:26,688 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:21:33,496 DEBUG c.s.j.DataJob [Thread-0] looper[2] (next loop in 0.1 minutes)
+2022-03-30 13:21:47,375 DEBUG c.s.Application [main] application started
+2022-03-30 13:21:47,391 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:21:54,196 DEBUG c.s.j.DataJob [Thread-0] looper[2] (next loop in 0.1 minutes)
+2022-03-30 13:22:00,310 DEBUG c.s.j.DataJob [Thread-0] looper[3] (next loop in 0.1 minutes)
+2022-03-30 13:22:06,472 DEBUG c.s.j.DataJob [Thread-0] looper[4] (next loop in 0.1 minutes)
+2022-03-30 13:22:12,608 DEBUG c.s.j.DataJob [Thread-0] looper[5] (next loop in 0.1 minutes)
+2022-03-30 13:22:18,724 DEBUG c.s.j.DataJob [Thread-0] looper[6] (next loop in 0.1 minutes)
+2022-03-30 13:22:24,844 DEBUG c.s.j.DataJob [Thread-0] looper[7] (next loop in 0.1 minutes)
+2022-03-30 13:22:30,952 DEBUG c.s.j.DataJob [Thread-0] looper[8] (next loop in 0.1 minutes)
+2022-03-30 13:25:12,767 DEBUG c.s.Application [main] application started
+2022-03-30 13:25:12,772 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:25:12,788 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:25:24,855 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:25:24,855 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:25:30,995 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:25:37,317 DEBUG c.s.j.DataJob [Thread-0] looper[2] (next loop in 0.1 minutes)
+2022-03-30 13:25:37,321 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:25:43,191 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:25:43,191 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:25:49,323 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:31:36,873 DEBUG c.s.Application [main] application started
+2022-03-30 13:31:36,916 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:31:37,690 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:31:48,521 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:39:15,228 DEBUG c.s.Application [main] application started
+2022-03-30 13:39:15,244 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:39:16,060 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:39:26,942 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:41:18,122 DEBUG c.s.Application [main] application started
+2022-03-30 13:41:18,134 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:41:19,018 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:41:29,778 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:48:40,246 DEBUG c.s.Application [main] application started
+2022-03-30 13:48:40,246 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:48:41,130 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:48:52,648 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-03-30 13:50:22,221 DEBUG c.s.Application [main] application started
+2022-03-30 13:50:22,236 DEBUG c.s.j.DataJob [Thread-0] looper[1] (next loop in 0.1 minutes)
+2022-03-30 13:50:23,008 INFO c.s.s.m.SimpleMailService [Thread-0] Odesílá se mail
+2022-03-30 13:50:33,882 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success

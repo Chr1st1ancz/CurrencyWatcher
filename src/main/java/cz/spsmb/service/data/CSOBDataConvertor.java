@@ -13,7 +13,7 @@ public class CSOBDataConvertor implements DataConvertor {
         String[] contentArray = content.split("\n");
         for (int i = 4; i < contentArray.length; i++) {
             String[] dataArray = contentArray[i].split(";");
-            System.out.println(dataArray[2] + "; " + dataArray[1] + "; " + Double.parseDouble(dataArray[6].replace(',', '.')));
+            // System.out.println(dataArray[2] + "; " + dataArray[1] + "; " + Double.parseDouble(dataArray[6].replace(',', '.')));
             currencyEntities.add(new CurrencyEntity(BankCode.CSOB, dataArray[2], Integer.parseInt(dataArray[1]), Double.parseDouble(dataArray[6].replace(',', '.'))));
         }
         currencyEntities.get(1).getCurrencyCode();
