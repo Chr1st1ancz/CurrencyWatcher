@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Newest Merge&#10;- Fast SimpleDateFormat update">
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648921209685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Newest Merge&#10;- Fast SimpleDateFormat update">
+      <created>1648923002812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648923002812</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +208,7 @@
     <MESSAGE value="asd" />
     <MESSAGE value="Megeruju to ok?&#10;- PLS MARGE asi" />
     <MESSAGE value="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph" />
+    <MESSAGE value="Newest Merge&#10;- Fast SimpleDateFormat update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Newest Merge&#10;- Fast SimpleDateFormat update" />
   </component>
 </project>

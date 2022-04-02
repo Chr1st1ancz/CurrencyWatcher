@@ -56,6 +56,6 @@ public class SimpleMailService implements MailService {
             logger.error("Unexpected error: " + exception);
             System.exit(0);
         }
-        logger.debug("Success");
+        logger.info("Success");
     }
 }
