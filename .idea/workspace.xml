@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Megeruju to ok?&#10;- PLS MARGE asi">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/window/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/http/WebsiteCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CurrencyWatcher.iml" afterDir="false" />
+    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyWatcher.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/config/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/currencyGetter/CurrencyGetter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/job/DataJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/job/DataJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/repository/CurrencyDataRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/repository/repos.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/data/CSOBDataConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/data/CSOBDataConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/FinalSendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/FinalSendMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/tests/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/tests/MailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cz/spsmb/gui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cz/spsmb/gui/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/GuiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/GuiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/spsmb/gui/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648636133602</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph">
+      <created>1648921209685</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648921209685</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +200,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
     <MESSAGE value="Megeruju to ok?&#10;- PLS MARGE asi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Megeruju to ok?&#10;- PLS MARGE asi" />
+    <MESSAGE value="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph" />
   </component>
 </project>

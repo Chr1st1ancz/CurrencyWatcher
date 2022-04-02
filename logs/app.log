@@ -1508,3 +1508,17 @@
 2022-04-02 19:35:13,298 DEBUG c.s.g.MainController [Thread-0] Gui updated
 2022-04-02 19:35:13,321 INFO c.s.s.m.SimpleMailService [Thread-0] Mail pending (gg.polacek@gmail.com)
 2022-04-02 19:35:15,044 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-04-02 20:05:15,046 DEBUG c.s.j.DataJob [Thread-0] DataJob[2] (next loop in 30.0 minutes (1800000.0 ms))
+2022-04-02 20:05:15,653 INFO c.s.s.h.WebsiteCheck [Thread-0] Success
+2022-04-02 20:05:15,772 INFO c.s.s.d.CSOBDataConvertor [Thread-0] Success
+2022-04-02 20:05:15,776 DEBUG c.s.g.MainController [Thread-0] Gui updated
+2022-04-02 20:05:15,779 INFO c.s.s.m.SimpleMailService [Thread-0] Mail pending (gg.polacek@gmail.com)
+2022-04-02 20:05:17,838 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success
+2022-04-02 20:09:29,412 DEBUG c.s.Application [main] Application started
+2022-04-02 20:09:30,198 DEBUG c.s.g.GuiApplication [JavaFX Application Thread] Gui started
+2022-04-02 20:09:30,808 DEBUG c.s.j.DataJob [Thread-0] DataJob[1] (next loop in 30.0 minutes (1800000.0 ms))
+2022-04-02 20:09:31,859 INFO c.s.s.h.WebsiteCheck [Thread-0] Success
+2022-04-02 20:09:31,951 INFO c.s.s.d.CSOBDataConvertor [Thread-0] Success
+2022-04-02 20:09:31,960 DEBUG c.s.g.MainController [Thread-0] Gui updated
+2022-04-02 20:09:31,982 INFO c.s.s.m.SimpleMailService [Thread-0] Mail pending (gg.polacek@gmail.com)
+2022-04-02 20:09:34,835 DEBUG c.s.s.m.SimpleMailService [Thread-0] Success

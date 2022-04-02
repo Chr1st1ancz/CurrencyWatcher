@@ -147,7 +147,7 @@ public class MainController implements Initializable {
         PLNinput.setText(PLNp + "");
         HUFinput.setText(HUFp + "");
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM. (H:m:s)");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM. (HH:mm:ss)");
         String date = simpleDateFormat.format(new Date());
         lastUpdate.setText(date);
         logger.debug("Gui updated");
