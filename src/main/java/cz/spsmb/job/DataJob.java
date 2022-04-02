@@ -1,11 +1,11 @@
 package cz.spsmb.job;
 
 import cz.spsmb.entity.CurrencyEntity;
+import cz.spsmb.gui.MainController;
 import cz.spsmb.service.data.CSOBDataConvertor;
 import cz.spsmb.service.data.SimpleDataFetcher;
+import cz.spsmb.service.http.WebsiteCheck;
 import cz.spsmb.service.mail.FinalSendMail;
-import cz.spsmb.service.mail.SimpleMailService;
-import cz.spsmb.tests.MailTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,7 +16,7 @@ import java.util.Properties;
 
 public class DataJob extends Thread {
 
-    private static InputStream input = MailTest.class.getClassLoader().getResourceAsStream("config.properties");
+    private static InputStream input = DataJob.class.getClassLoader().getResourceAsStream("config.properties");
     private static Logger logger = LogManager.getLogger(DataJob.class);
 
     private volatile CSOBDataConvertor csobData = new CSOBDataConvertor();
@@ -30,6 +30,16 @@ public class DataJob extends Thread {
     }
 
     private volatile boolean isRunning = true;
+    private volatile boolean isDebugMode = false;
+    private MainController stage;
+
+    public MainController getStage() {
+        return stage;
+    }
+
+    public void setStage(MainController stage) {
+        this.stage = stage;
+    }
 
     @Override
     public void run()  {
@@ -38,25 +48,26 @@ public class DataJob extends Thread {
             prop.load(input);
         } catch (IOException e) {
             e.printStackTrace();
-            logger.error("tried to load config.properties");
+            logger.error("Tried to load config.properties");
         }
 
         int loopCounter = 0;
-
         do {
             loopCounter++;
-            logger.debug("looper[" + loopCounter + "] (next loop in " + Double.parseDouble(prop.getProperty("app.timer.minutes")) + " minutes)");
-
-            /* Main Loop */
-            currencyList = csobData.convert(new SimpleDataFetcher().getContent("https://www.csob.cz/portal/lide/kurzovni-listek-old/-/date/kurzy.txt"));
-            FinalSendMail.send("gg.polacek@gmail.com", prop.getProperty("mail.subject"), listConvert(currencyList));
-
-            /* Looper Timer */
+            logger.debug("DataJob[" + loopCounter + "] (next loop in " + Double.parseDouble(prop.getProperty("app.timer.minutes")) + " minutes (" + Double.parseDouble(prop.getProperty("app.timer.minutes")) * 60000 + " ms))");
+            String url = prop.getProperty("app.site.csob");
+            if (WebsiteCheck.isAccessable(url, Integer.parseInt(prop.getProperty("web.timeout")))) {
+                currencyList = csobData.convert(new SimpleDataFetcher().getContent(url));
+                stage.updateCurrencies();
+                currencyList.clear();
+                if (!isDebugMode) {
+                    FinalSendMail.send("gg.polacek@gmail.com", prop.getProperty("mail.subject"), listConvert(currencyList));
+                }
+            }
             try {
                 Thread.sleep((long) (60000 * Double.parseDouble(prop.getProperty("app.timer.minutes"))));
             } catch (InterruptedException e) {
-                e.printStackTrace();
-                logger.error("tried to loop");
+                logger.error("Loop interrupted: " + e);
             }
         } while (isRunning);
     }
@@ -67,6 +78,14 @@ public class DataJob extends Thread {
 
     public void setRunning(boolean running) {
         isRunning = running;
+    }
+
+    public boolean isDebugMode() {
+        return isDebugMode;
+    }
+
+    public void setDebugMode(boolean debugMode) {
+        isDebugMode = debugMode;
     }
 
     public List<CurrencyEntity> getCurrencyList() {

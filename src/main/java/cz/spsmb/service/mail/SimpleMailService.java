@@ -1,5 +1,6 @@
 package cz.spsmb.service.mail;
 
+import cz.spsmb.gui.window.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import javax.mail.Message;
@@ -33,13 +34,12 @@ public class SimpleMailService implements MailService {
                 return new PasswordAuthentication(username, password);
             }
         });
-
        // mailSession.setDebug(true);
     }
 
 
     public void send(Mail mail) {
-        logger.info("Odesílá se mail");
+        logger.info("Mail pending (" + mail.getTo() + ")");
         try {
             Message msg = new MimeMessage(mailSession);
             msg.setFrom(new InternetAddress(this.properties.getProperty(MAIL_USER_PASSWORD)));
@@ -51,8 +51,10 @@ public class SimpleMailService implements MailService {
 
             Transport.send(msg);
 
-        } catch(Exception E){
-            logger.error("Odesílání mailu se pojebalo");
+        } catch(Exception exception){
+            Window.errorBox(exception.toString(), "Please, try to switch off your antivirus software and then restart this program", this.getClass().toString());
+            logger.error("Unexpected error: " + exception);
+            System.exit(0);
         }
         logger.debug("Success");
     }

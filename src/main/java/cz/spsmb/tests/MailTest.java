@@ -22,17 +22,19 @@ public class MailTest {
             Properties prop = new Properties();
             prop.load(input);
             Mail mailSend = new Mail();
-            mailSend.setTo("christian.abraham@email.cz");
+            mailSend.setTo("gg.polacek@gmail.com"); // default: christian.abraham@email.cz
             mailSend.setSubject("Mailsender Test");
             mailSend.setBody("Success");
             MailService mailService = new SimpleMailService(prop);
             mailService.send(mailSend);
 
-            Mail mailSend2 = new Mail();
-            mailSend2.setTo("minecaft0018@email.cz");
-            mailSend2.setSubject("Mailsender Test");
-            mailSend2.setBody("Success2");
-            mailService.send(mailSend2);
+            /*
+                Mail mailSend2 = new Mail();
+                mailSend2.setTo("minecaft0018@email.cz");
+                mailSend2.setSubject("Mailsender Test");
+                mailSend2.setBody("Success2");
+                mailService.send(mailSend2);
+            */
         } catch (IOException ex) {
             ex.printStackTrace();
         }
