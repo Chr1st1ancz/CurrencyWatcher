@@ -1,8 +1,10 @@
 package cz.spsmb.database;
 
 import cz.spsmb.entity.CurrencyEntity;
+import cz.spsmb.modules.Logger;
 import cz.spsmb.service.data.CSOBDataConvertor;
 import cz.spsmb.service.data.SimpleDataFetcher;
+import org.apache.logging.log4j.LogManager;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import java.sql.SQLException;
@@ -10,6 +12,7 @@ import java.util.*;
 
 public class Database {
     private Session session;
+    private org.apache.logging.log4j.Logger logger = LogManager.getLogger(Database.class);
 
     public Database() {
         this.session = HibernateUtil.getSessionFactory().openSession();
@@ -28,7 +31,7 @@ public class Database {
 
             return existingCurrencies;
         } catch (Exception e) {
-        System.err.println(e);
+        logger.error(e);
         if (transaction != null) {
             transaction.rollback();
         }
@@ -46,14 +49,13 @@ public class Database {
             transaction = session.beginTransaction();
             for (int i = 0; i < newCurrencies.size(); i++) {
                 CurrencyEntity curr = newCurrencies.get(i);
-                System.out.println("Přidávám měnu " + curr.getCurrencyCode());
                 session.save(curr);
             }
-            System.out.println("Nové měny uloženy.");
+            logger.info("Added " + newCurrencies.size() + " currencies" + " to database");
 
             transaction.commit();
         } catch (Exception e) {
-            System.err.println(e);
+            logger.error(e);
             if (transaction != null) {
                 transaction.rollback();
             }
