@@ -1,0 +1,1371 @@
+2022-04-03 21:22:10,347 DEBUG c.s.Application [main] Application started
+2022-04-03 21:22:10,384 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-04-03 21:22:10,399 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-04-03 21:22:10,401 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-04-03 21:22:10,404 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-04-03 21:22:10,455 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
+2022-04-03 21:22:10,456 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2022-04-03 21:22:10,561 DEBUG o.h.b.j.i.s.LocalXmlResourceResolver [main] Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2022-04-03 21:22:10,562 DEBUG o.h.b.j.i.s.LocalXmlResourceResolver [main] Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2022-04-03 21:22:10,570 DEBUG o.h.b.c.i.JaxbCfgProcessor [main] cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2022-04-03 21:22:10,788 DEBUG o.h.s.s.ServiceBinding [main] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-04-03 21:22:10,805 DEBUG o.h.c.i.RegionFactoryInitiator [main] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2022-04-03 21:22:10,806 DEBUG o.h.c.i.RegionFactoryInitiator [main] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-04-03 21:22:10,827 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-04-03 21:22:10,908 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration boolean -> org.hibernate.type.BooleanType@4628b1d3
+2022-04-03 21:22:10,909 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration boolean -> org.hibernate.type.BooleanType@4628b1d3
+2022-04-03 21:22:10,909 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4628b1d3
+2022-04-03 21:22:10,910 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@226f885f
+2022-04-03 21:22:10,911 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration true_false -> org.hibernate.type.TrueFalseType@52350abb
+2022-04-03 21:22:10,912 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration yes_no -> org.hibernate.type.YesNoType@5ebd56e9
+2022-04-03 21:22:10,913 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte -> org.hibernate.type.ByteType@3277e499
+2022-04-03 21:22:10,913 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte -> org.hibernate.type.ByteType@3277e499
+2022-04-03 21:22:10,913 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3277e499
+2022-04-03 21:22:10,914 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration character -> org.hibernate.type.CharacterType@2d72f75e
+2022-04-03 21:22:10,915 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration char -> org.hibernate.type.CharacterType@2d72f75e
+2022-04-03 21:22:10,915 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2d72f75e
+2022-04-03 21:22:10,916 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration short -> org.hibernate.type.ShortType@486be205
+2022-04-03 21:22:10,916 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration short -> org.hibernate.type.ShortType@486be205
+2022-04-03 21:22:10,916 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@486be205
+2022-04-03 21:22:10,917 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration integer -> org.hibernate.type.IntegerType@35293c05
+2022-04-03 21:22:10,918 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration int -> org.hibernate.type.IntegerType@35293c05
+2022-04-03 21:22:10,918 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@35293c05
+2022-04-03 21:22:10,919 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration long -> org.hibernate.type.LongType@560513ce
+2022-04-03 21:22:10,919 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration long -> org.hibernate.type.LongType@560513ce
+2022-04-03 21:22:10,919 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Long -> org.hibernate.type.LongType@560513ce
+2022-04-03 21:22:10,920 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration float -> org.hibernate.type.FloatType@10027fc9
+2022-04-03 21:22:10,921 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration float -> org.hibernate.type.FloatType@10027fc9
+2022-04-03 21:22:10,921 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@10027fc9
+2022-04-03 21:22:10,922 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration double -> org.hibernate.type.DoubleType@5a021cb9
+2022-04-03 21:22:10,923 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration double -> org.hibernate.type.DoubleType@5a021cb9
+2022-04-03 21:22:10,923 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5a021cb9
+2022-04-03 21:22:10,924 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@67af833b
+2022-04-03 21:22:10,924 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@67af833b
+2022-04-03 21:22:10,925 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@26b894bd
+2022-04-03 21:22:10,925 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@26b894bd
+2022-04-03 21:22:10,926 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration string -> org.hibernate.type.StringType@525d79f0
+2022-04-03 21:22:10,927 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.String -> org.hibernate.type.StringType@525d79f0
+2022-04-03 21:22:10,927 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2ca65ce4
+2022-04-03 21:22:10,928 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@35038141
+2022-04-03 21:22:10,929 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration url -> org.hibernate.type.UrlType@41200e0c
+2022-04-03 21:22:10,929 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.net.URL -> org.hibernate.type.UrlType@41200e0c
+2022-04-03 21:22:10,930 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Duration -> org.hibernate.type.DurationType@24be2d9c
+2022-04-03 21:22:10,930 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@24be2d9c
+2022-04-03 21:22:10,934 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Instant -> org.hibernate.type.InstantType@40bffbca
+2022-04-03 21:22:10,934 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@40bffbca
+2022-04-03 21:22:10,935 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@e3cee7b
+2022-04-03 21:22:10,936 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@e3cee7b
+2022-04-03 21:22:10,937 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@43c67247
+2022-04-03 21:22:10,937 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@43c67247
+2022-04-03 21:22:10,939 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1a15b789
+2022-04-03 21:22:10,939 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1a15b789
+2022-04-03 21:22:10,941 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@596df867
+2022-04-03 21:22:10,941 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@596df867
+2022-04-03 21:22:10,942 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@285f09de
+2022-04-03 21:22:10,943 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@285f09de
+2022-04-03 21:22:10,945 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@66238be2
+2022-04-03 21:22:10,945 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@66238be2
+2022-04-03 21:22:10,946 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration date -> org.hibernate.type.DateType@70e0accd
+2022-04-03 21:22:10,946 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Date -> org.hibernate.type.DateType@70e0accd
+2022-04-03 21:22:10,947 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration time -> org.hibernate.type.TimeType@345e5a17
+2022-04-03 21:22:10,948 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@345e5a17
+2022-04-03 21:22:10,949 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration timestamp -> org.hibernate.type.TimestampType@5bbc9f97
+2022-04-03 21:22:10,949 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5bbc9f97
+2022-04-03 21:22:10,949 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5bbc9f97
+2022-04-03 21:22:10,951 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@425357dd
+2022-04-03 21:22:10,952 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration calendar -> org.hibernate.type.CalendarType@1e886a5b
+2022-04-03 21:22:10,952 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1e886a5b
+2022-04-03 21:22:10,953 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1e886a5b
+2022-04-03 21:22:10,953 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@372b0d86
+2022-04-03 21:22:10,954 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration locale -> org.hibernate.type.LocaleType@70eecdc2
+2022-04-03 21:22:10,955 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@70eecdc2
+2022-04-03 21:22:10,956 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration currency -> org.hibernate.type.CurrencyType@1a6f5124
+2022-04-03 21:22:10,956 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1a6f5124
+2022-04-03 21:22:10,957 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration timezone -> org.hibernate.type.TimeZoneType@f5c79a6
+2022-04-03 21:22:10,957 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@f5c79a6
+2022-04-03 21:22:10,958 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration class -> org.hibernate.type.ClassType@66d23e4a
+2022-04-03 21:22:10,958 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@66d23e4a
+2022-04-03 21:22:10,959 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@41c07648
+2022-04-03 21:22:10,959 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@41c07648
+2022-04-03 21:22:10,959 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@60d84f61
+2022-04-03 21:22:10,960 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration binary -> org.hibernate.type.BinaryType@329a1243
+2022-04-03 21:22:10,961 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte[] -> org.hibernate.type.BinaryType@329a1243
+2022-04-03 21:22:10,961 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [B -> org.hibernate.type.BinaryType@329a1243
+2022-04-03 21:22:10,962 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@581d969c
+2022-04-03 21:22:10,962 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@581d969c
+2022-04-03 21:22:10,962 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@581d969c
+2022-04-03 21:22:10,963 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration row_version -> org.hibernate.type.RowVersionType@7cd1ac19
+2022-04-03 21:22:10,963 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration image -> org.hibernate.type.ImageType@1804f60d
+2022-04-03 21:22:10,964 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration characters -> org.hibernate.type.CharArrayType@21680803
+2022-04-03 21:22:10,964 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration char[] -> org.hibernate.type.CharArrayType@21680803
+2022-04-03 21:22:10,964 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [C -> org.hibernate.type.CharArrayType@21680803
+2022-04-03 21:22:10,965 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@c074c0c
+2022-04-03 21:22:10,965 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@c074c0c
+2022-04-03 21:22:10,966 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@c074c0c
+2022-04-03 21:22:10,966 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration text -> org.hibernate.type.TextType@58dea0a5
+2022-04-03 21:22:10,967 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ntext -> org.hibernate.type.NTextType@733037
+2022-04-03 21:22:10,968 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration blob -> org.hibernate.type.BlobType@4d157787
+2022-04-03 21:22:10,968 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4d157787
+2022-04-03 21:22:10,969 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@54e7391d
+2022-04-03 21:22:10,970 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration clob -> org.hibernate.type.ClobType@62c5bbdc
+2022-04-03 21:22:10,970 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@62c5bbdc
+2022-04-03 21:22:10,971 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration nclob -> org.hibernate.type.NClobType@2fa7ae9
+2022-04-03 21:22:10,971 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2fa7ae9
+2022-04-03 21:22:10,972 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@60afd40d
+2022-04-03 21:22:10,972 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ea27e34
+2022-04-03 21:22:10,973 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration serializable -> org.hibernate.type.SerializableType@6f0628de
+2022-04-03 21:22:10,976 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration object -> org.hibernate.type.ObjectType@1deb2c43
+2022-04-03 21:22:10,976 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1deb2c43
+2022-04-03 21:22:10,977 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6f6a7463
+2022-04-03 21:22:10,977 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1bdaa23d
+2022-04-03 21:22:10,977 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@79f227a9
+2022-04-03 21:22:10,977 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6ca320ab
+2022-04-03 21:22:10,977 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@50d68830
+2022-04-03 21:22:10,978 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1e53135d
+2022-04-03 21:22:10,978 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7674a051
+2022-04-03 21:22:10,978 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3a7704c
+2022-04-03 21:22:10,998 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-04-03 21:22:10,999 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-04-03 21:22:11,000 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-04-03 21:22:11,000 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-04-03 21:22:11,001 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-04-03 21:22:11,001 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-04-03 21:22:11,002 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-04-03 21:22:11,003 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-04-03 21:22:11,003 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-04-03 21:22:11,004 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-04-03 21:22:11,004 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-04-03 21:22:11,004 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-04-03 21:22:11,005 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-04-03 21:22:11,005 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-04-03 21:22:11,010 WARN o.h.o.c.pooling [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-04-03 21:22:11,013 INFO o.h.o.c.pooling [main] HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:file:./database/database;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE]
+2022-04-03 21:22:11,013 INFO o.h.o.c.pooling [main] HHH10001001: Connection properties: {password=, user=sa}
+2022-04-03 21:22:11,013 INFO o.h.o.c.pooling [main] HHH10001003: Autocommit mode: false
+2022-04-03 21:22:11,015 DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl [main] Initializing Connection pool with 1 Connections
+2022-04-03 21:22:11,016 INFO o.h.e.j.c.i.DriverManagerConnectionProviderImpl [main] HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-04-03 21:22:15,335 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] Database ->
+       name : H2
+    version : 2.1.210 (2022-01-17)
+      major : 2
+      minor : 1
+2022-04-03 21:22:15,335 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] Driver ->
+       name : H2 JDBC Driver
+    version : 2.1.210 (2022-01-17)
+      major : 2
+      minor : 1
+2022-04-03 21:22:15,336 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] JDBC version : 4.2
+2022-04-03 21:22:15,345 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-03 21:22:15,371 DEBUG o.h.e.j.e.s.IdentifierHelperBuilder [main] JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2022-04-03 21:22:15,383 DEBUG o.h.b.m.r.Namespace [main] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-04-03 21:22:15,385 DEBUG o.h.t.s.TypeConfiguration$Scope [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2e2f720] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3ae2ed38]
+2022-04-03 21:22:15,423 DEBUG o.h.c.AnnotationBinder [main] Binding entity from annotated class: cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:15,439 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-04-03 21:22:15,444 DEBUG o.h.c.a.EntityBinder [main] Import with entity name CurrencyEntity
+2022-04-03 21:22:15,446 DEBUG o.h.c.a.EntityBinder [main] Bind entity cz.spsmb.entity.CurrencyEntity on table CurrencyEntity
+2022-04-03 21:22:15,462 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(CurrencyEntity), mappingColumn=currency_id, insertable=true, updatable=true, unique=false}
+2022-04-03 21:22:15,465 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property id with lazy=false
+2022-04-03 21:22:15,466 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [cz.spsmb.entity.CurrencyEntity:id]
+2022-04-03 21:22:15,468 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for id
+2022-04-03 21:22:15,469 DEBUG o.h.c.a.PropertyBinder [main] Building property id
+2022-04-03 21:22:15,471 DEBUG o.h.c.BinderHelper [main] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(currency_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2022-04-03 21:22:15,472 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(CurrencyEntity), mappingColumn=bank_code, insertable=true, updatable=true, unique=false}
+2022-04-03 21:22:15,472 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property bankCode with lazy=false
+2022-04-03 21:22:15,472 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [cz.spsmb.entity.CurrencyEntity:bankCode]
+2022-04-03 21:22:15,474 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for bankCode
+2022-04-03 21:22:15,474 DEBUG o.h.c.a.PropertyBinder [main] Building property bankCode
+2022-04-03 21:22:15,474 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(CurrencyEntity), mappingColumn=currency_code, insertable=true, updatable=true, unique=false}
+2022-04-03 21:22:15,474 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property currencyCode with lazy=false
+2022-04-03 21:22:15,474 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [cz.spsmb.entity.CurrencyEntity:currencyCode]
+2022-04-03 21:22:15,474 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for currencyCode
+2022-04-03 21:22:15,475 DEBUG o.h.c.a.PropertyBinder [main] Building property currencyCode
+2022-04-03 21:22:15,475 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(CurrencyEntity), mappingColumn=currency_price, insertable=true, updatable=true, unique=false}
+2022-04-03 21:22:15,475 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property currencyPrice with lazy=false
+2022-04-03 21:22:15,475 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [cz.spsmb.entity.CurrencyEntity:currencyPrice]
+2022-04-03 21:22:15,475 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for currencyPrice
+2022-04-03 21:22:15,475 DEBUG o.h.c.a.PropertyBinder [main] Building property currencyPrice
+2022-04-03 21:22:15,476 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(CurrencyEntity), mappingColumn=currency_price_date, insertable=true, updatable=true, unique=false}
+2022-04-03 21:22:15,476 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property currencyPriceDate with lazy=false
+2022-04-03 21:22:15,476 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [cz.spsmb.entity.CurrencyEntity:currencyPriceDate]
+2022-04-03 21:22:15,476 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for currencyPriceDate
+2022-04-03 21:22:15,476 DEBUG o.h.c.a.PropertyBinder [main] Building property currencyPriceDate
+2022-04-03 21:22:15,478 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for id
+2022-04-03 21:22:15,478 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for bankCode
+2022-04-03 21:22:15,479 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for currencyCode
+2022-04-03 21:22:15,479 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for currencyPrice
+2022-04-03 21:22:15,479 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for currencyPriceDate
+2022-04-03 21:22:15,480 DEBUG o.h.m.PrimaryKey [main] Forcing column [currency_id] to be non-null as it is part of the primary key for table [currencyentity]
+2022-04-03 21:22:15,506 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,520 DEBUG o.h.i.SessionFactoryImpl [main] Building session factory
+2022-04-03 21:22:15,521 DEBUG o.h.c.Settings [main] SessionFactory name : null
+2022-04-03 21:22:15,521 DEBUG o.h.c.Settings [main] Automatic flush during beforeCompletion(): enabled
+2022-04-03 21:22:15,521 DEBUG o.h.c.Settings [main] Automatic session close at end of transaction: disabled
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Statistics: disabled
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Deleted entity synthetic identifier rollback: disabled
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Default entity-mode: pojo
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Allow initialization of lazy state outside session : disabled
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Using BatchFetchStyle : LEGACY
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Default batch fetch size: -1
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Maximum outer join fetch depth: null
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Default null ordering: NONE
+2022-04-03 21:22:15,522 DEBUG o.h.c.Settings [main] Order SQL updates by primary key: disabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Order SQL inserts for batching: disabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] multi-tenancy strategy : NONE
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] JTA Track by Thread: enabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Query language substitutions: {}
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Named query checking : enabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Second-level cache: disabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Second-level query cache: disabled
+2022-04-03 21:22:15,523 DEBUG o.h.c.Settings [main] Second-level query cache factory: null
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Second-level cache region prefix: null
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Optimize second-level cache for minimal puts: disabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Structured second-level cache entries: disabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Second-level cache direct-reference entries: disabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Automatic eviction of collection cache: disabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] JDBC batch size: 15
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] JDBC batch updates for versioned data: enabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Scrollable result sets: enabled
+2022-04-03 21:22:15,524 DEBUG o.h.c.Settings [main] Wrap result sets: disabled
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JDBC3 getGeneratedKeys(): enabled
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JDBC result set fetch size: null
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] Connection release mode: AFTER_TRANSACTION
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] Generate SQL with comments: disabled
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JPA compliance - query : 
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JPA compliance - closed-handling : 
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JPA compliance - lists : 
+2022-04-03 21:22:15,525 DEBUG o.h.c.Settings [main] JPA compliance - transactions : 
+2022-04-03 21:22:15,564 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,575 DEBUG o.h.i.SessionFactoryImpl [main] Session factory constructed with filter configurations : {}
+2022-04-03 21:22:15,575 DEBUG o.h.i.SessionFactoryImpl [main] Instantiating session factory with properties: {dialect=org.hibernate.dialect.H2Dialect, java.specification.version=16, sun.cpu.isalist=amd64, hibernate.dbcp.maxIdle=10, sun.jnu.encoding=Cp1250, hibernate.dialect=org.hibernate.dialect.H2Dialect, java.class.path=C:\Users\otto2\Downloads\CurrencyWatcher-NEGRBRAHAM-merge-master\CurrencyWatcher-NEGRBRAHAM-merge-master\target\classes;C:\Users\otto2\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\otto2\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\otto2\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\otto2\.m2\repository\net\bytebuddy\byte-buddy\1.8.17\byte-buddy-1.8.17.jar;C:\Users\otto2\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\otto2\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\otto2\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\otto2\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\otto2\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\otto2\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-controls\16\javafx-controls-16.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-controls\16\javafx-controls-16-win.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-graphics\16\javafx-graphics-16.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-graphics\16\javafx-graphics-16-win.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-base\16\javafx-base-16.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-base\16\javafx-base-16-win.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-fxml\16\javafx-fxml-16.jar;C:\Users\otto2\.m2\repository\org\openjfx\javafx-fxml\16\javafx-fxml-16-win.jar;C:\Users\otto2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\otto2\.m2\repository\ch\qos\logback\logback-classic\1.2.6\logback-classic-1.2.6.jar;C:\Users\otto2\.m2\repository\ch\qos\logback\logback-core\1.2.6\logback-core-1.2.6.jar;C:\Users\otto2\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\otto2\.m2\repository\com\lmax\disruptor\3.3.4\disruptor-3.3.4.jar;C:\Users\otto2\.m2\repository\org\graylog2\log4j2\log4j2-gelf\1.3.1\log4j2-gelf-1.3.1.jar;C:\Users\otto2\.m2\repository\org\graylog2\gelfclient\1.4.1\gelfclient-1.4.1.jar;C:\Users\otto2\.m2\repository\io\netty\netty-handler\4.1.6.Final\netty-handler-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\io\netty\netty-buffer\4.1.6.Final\netty-buffer-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\io\netty\netty-common\4.1.6.Final\netty-common-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\io\netty\netty-transport\4.1.6.Final\netty-transport-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\io\netty\netty-resolver\4.1.6.Final\netty-resolver-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\io\netty\netty-codec\4.1.6.Final\netty-codec-4.1.6.Final.jar;C:\Users\otto2\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.4\jackson-core-2.8.4.jar;C:\Users\otto2\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\otto2\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\otto2\.m2\repository\org\apache\logging\log4j\log4j-api\2.6.1\log4j-api-2.6.1.jar;C:\Users\otto2\.m2\repository\org\apache\logging\log4j\log4j-core\2.6.1\log4j-core-2.6.1.jar;C:\Users\otto2\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;C:\Users\otto2\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\otto2\.m2\repository\com\h2database\h2\2.1.210\h2-2.1.210.jar;C:\Users\otto2\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\otto2\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\otto2\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\otto2\.m2\repository\org\javassist\javassist\3.25.0-GA\javassist-3.25.0-GA.jar;C:\Users\otto2\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\otto2\.m2\repository\org\junit\platform\junit-platform-commons\1.7.1\junit-platform-commons-1.7.1.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=update, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Prague, hibernate.dbcp.maxWaitMillis=-1, java.vm.specification.version=16, os.name=Windows 10, current_session_context_class=thread, sun.java.launcher=SUN_STANDARD, user.country=CZ, sun.boot.library.path=C:\Program Files\Java\jdk-16.0.1\bin, sun.java.command=cz.spsmb.Application, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\otto2, user.language=cs, java.specification.vendor=Oracle Corporation, java.version.date=2021-04-20, java.home=C:\Program Files\Java\jdk-16.0.1, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=update, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=16.0.1+9-24, user.name=otto2, path.separator=;, hibernate.connection.username=****, hibernate.dbcp.minIdle=5, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:h2:file:./database/database;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.dbcp.initialSize=5, hibernate.dbcp.maxTotal=20, hibernate.current_session_context_class=thread, show_sql=true, hibernate.connection.driver_class=org.h2.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\otto2\AppData\Local\Temp\, java.version=16.0.1, user.dir=C:\Users\otto2\Downloads\CurrencyWatcher-NEGRBRAHAM-merge-master\CurrencyWatcher-NEGRBRAHAM-merge-master, os.arch=amd64, connection.username=sa, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=org.h2.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@65e21ce3, java.library.path=C:\Program Files\Java\jdk-16.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-14.0.2.12-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.4.0\;J:\Node.js\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\otto2\AppData\Local\Microsoft\WindowsApps;I:\Microsoft VS Code\bin;C:\ffmpeg\bin;C:\Users\otto2\AppData\Roaming\npm;C:\Users\otto2\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=16.0.1+9-24, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:h2:file:./database/database;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE, java.class.version=60.0}
+2022-04-03 21:22:15,586 DEBUG o.h.s.s.JaccIntegrator [main] Skipping JACC integration as it was not enabled
+2022-04-03 21:22:15,587 DEBUG o.h.i.SessionFactoryImpl [main] Instantiated session factory
+2022-04-03 21:22:15,587 DEBUG o.h.t.s.TypeConfiguration$Scope [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2e2f720] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@443effcb]
+2022-04-03 21:22:15,619 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [cz.spsmb.entity.CurrencyEntity] is safe
+2022-04-03 21:22:15,619 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:15,624 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,626 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,629 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [cz.spsmb.entity.CurrencyEntity] is safe
+2022-04-03 21:22:15,629 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:15,762 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,763 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,772 DEBUG o.h.p.e.AbstractEntityPersister [main] Static SQL for entity: cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:15,772 DEBUG o.h.p.e.AbstractEntityPersister [main]  Version select: select currency_id from CurrencyEntity where currency_id =?
+2022-04-03 21:22:15,772 DEBUG o.h.p.e.AbstractEntityPersister [main]  Snapshot select: select currencyen_.currency_id, currencyen_.bank_code as bank_cod2_0_, currencyen_.currency_code as currency3_0_, currencyen_.currency_price as currency4_0_, currencyen_.currency_price_date as currency5_0_ from CurrencyEntity currencyen_ where currencyen_.currency_id=?
+2022-04-03 21:22:15,773 DEBUG o.h.p.e.AbstractEntityPersister [main]  Insert 0: insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:15,773 DEBUG o.h.p.e.AbstractEntityPersister [main]  Update 0: update CurrencyEntity set bank_code=?, currency_code=?, currency_price=?, currency_price_date=? where currency_id=?
+2022-04-03 21:22:15,773 DEBUG o.h.p.e.AbstractEntityPersister [main]  Delete 0: delete from CurrencyEntity where currency_id=?
+2022-04-03 21:22:15,788 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@493da830]
+2022-04-03 21:22:15,788 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : bankCode
+2022-04-03 21:22:15,789 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyCode
+2022-04-03 21:22:15,789 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyPrice
+2022-04-03 21:22:15,789 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyPriceDate
+2022-04-03 21:22:15,789 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2022-04-03 21:22:15,797 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2022-04-03 21:22:15,803 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=cz.spsmb.entity.CurrencyEntity)
+    - Returns
+       - EntityReturnImpl(entity=cz.spsmb.entity.CurrencyEntity, querySpaceUid=<gen:0>, path=cz.spsmb.entity.CurrencyEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cz.spsmb.entity.CurrencyEntity)
+          - SQL table alias mapping - currencyen0_
+          - alias suffix - 0_
+          - suffixed key columns - {currency1_0_0_}
+
+2022-04-03 21:22:15,805 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity cz.spsmb.entity.CurrencyEntity [NONE]: select currencyen0_.currency_id as currency1_0_0_, currencyen0_.bank_code as bank_cod2_0_0_, currencyen0_.currency_code as currency3_0_0_, currencyen0_.currency_price as currency4_0_0_, currencyen0_.currency_price_date as currency5_0_0_ from CurrencyEntity currencyen0_ where currencyen0_.currency_id=?
+2022-04-03 21:22:15,805 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d94a2dc]
+2022-04-03 21:22:15,805 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : bankCode
+2022-04-03 21:22:15,805 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyCode
+2022-04-03 21:22:15,805 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyPrice
+2022-04-03 21:22:15,805 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currencyPriceDate
+2022-04-03 21:22:15,805 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2022-04-03 21:22:15,806 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2022-04-03 21:22:15,806 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=cz.spsmb.entity.CurrencyEntity)
+    - Returns
+       - EntityReturnImpl(entity=cz.spsmb.entity.CurrencyEntity, querySpaceUid=<gen:0>, path=cz.spsmb.entity.CurrencyEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cz.spsmb.entity.CurrencyEntity)
+          - SQL table alias mapping - currencyen0_
+          - alias suffix - 0_
+          - suffixed key columns - {currency1_0_0_}
+
+2022-04-03 21:22:15,806 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity cz.spsmb.entity.CurrencyEntity [READ]: select currencyen0_.currency_id as currency1_0_0_, currencyen0_.bank_code as bank_cod2_0_0_, currencyen0_.currency_code as currency3_0_0_, currencyen0_.currency_price as currency4_0_0_, currencyen0_.currency_price_date as currency5_0_0_ from CurrencyEntity currencyen0_ where currencyen0_.currency_id=?
+2022-04-03 21:22:15,815 DEBUG o.h.l.Loader [main] Static select for action ACTION_MERGE on entity cz.spsmb.entity.CurrencyEntity: select currencyen0_.currency_id as currency1_0_0_, currencyen0_.bank_code as bank_cod2_0_0_, currencyen0_.currency_code as currency3_0_0_, currencyen0_.currency_price as currency4_0_0_, currencyen0_.currency_price_date as currency5_0_0_ from CurrencyEntity currencyen0_ where currencyen0_.currency_id=?
+2022-04-03 21:22:15,816 DEBUG o.h.l.Loader [main] Static select for action ACTION_REFRESH on entity cz.spsmb.entity.CurrencyEntity: select currencyen0_.currency_id as currency1_0_0_, currencyen0_.bank_code as bank_cod2_0_0_, currencyen0_.currency_code as currency3_0_0_, currencyen0_.currency_price as currency4_0_0_, currencyen0_.currency_price_date as currency5_0_0_ from CurrencyEntity currencyen0_ where currencyen0_.currency_id=?
+2022-04-03 21:22:15,826 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,826 DEBUG o.h.t.EnumType [main] Using ORDINAL-based conversion for Enum cz.spsmb.entity.BankCode
+2022-04-03 21:22:15,841 INFO o.h.o.c.access [main] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@671ea6ff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-04-03 21:22:15,859 DEBUG o.h.q.s.NamedQueryRepository [main] Checking 0 named HQL queries
+2022-04-03 21:22:15,859 DEBUG o.h.q.s.NamedQueryRepository [main] Checking 0 named SQL queries
+2022-04-03 21:22:15,860 DEBUG o.h.i.SessionFactoryRegistry [main] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4640195a
+2022-04-03 21:22:15,861 DEBUG o.h.i.SessionFactoryRegistry [main] Registering SessionFactory: 843ce6ef-3d9c-4903-a89e-c3359c1308c8 (<unnamed>)
+2022-04-03 21:22:15,861 DEBUG o.h.i.SessionFactoryRegistry [main] Not binding SessionFactory to JNDI, no JNDI name configured
+2022-04-03 21:22:15,912 DEBUG o.h.s.i.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2022-04-03 21:22:16,351 DEBUG c.s.g.GuiApplication [JavaFX Application Thread] Gui started
+2022-04-03 21:22:16,619 DEBUG o.h.e.t.i.TransactionImpl [JavaFX Application Thread] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-04-03 21:22:16,619 DEBUG o.h.e.t.i.TransactionImpl [JavaFX Application Thread] begin
+2022-04-03 21:22:16,634 DEBUG o.h.h.i.QueryTranslatorFactoryInitiator [JavaFX Application Thread] QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@74699044
+2022-04-03 21:22:16,634 INFO o.h.h.i.QueryTranslatorFactoryInitiator [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2022-04-03 21:22:16,655 DEBUG o.h.h.i.a.QueryTranslatorImpl [JavaFX Application Thread] parse() - HQL: from cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:16,659 DEBUG o.h.h.i.a.ErrorTracker [JavaFX Application Thread] throwQueryException() : no errors
+2022-04-03 21:22:16,665 DEBUG o.h.h.i.a.QueryTranslatorImpl [JavaFX Application Thread] --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'cz'
+                |  |  \-[IDENT] Node: 'spsmb'
+                |  \-[IDENT] Node: 'entity'
+                \-[IDENT] Node: 'CurrencyEntity'
+
+2022-04-03 21:22:16,683 DEBUG o.h.h.i.a.HqlSqlBaseWalker [JavaFX Application Thread] select << begin [level=1, statement=select]
+2022-04-03 21:22:16,694 DEBUG o.h.h.i.a.t.FromElement [JavaFX Application Thread] FromClause{level=1} : cz.spsmb.entity.CurrencyEntity (<no alias>) -> currencyen0_
+2022-04-03 21:22:16,694 DEBUG o.h.h.i.a.HqlSqlBaseWalker [JavaFX Application Thread] select : finishing up [level=1, statement=select]
+2022-04-03 21:22:16,695 DEBUG o.h.h.i.a.HqlSqlWalker [JavaFX Application Thread] processQuery() :  ( SELECT ( FromClause{level=1} CurrencyEntity currencyen0_ ) )
+2022-04-03 21:22:16,700 DEBUG o.h.h.i.a.HqlSqlWalker [JavaFX Application Thread] Derived SELECT clause created.
+2022-04-03 21:22:16,705 DEBUG o.h.h.i.a.u.JoinProcessor [JavaFX Application Thread] Using FROM fragment [CurrencyEntity currencyen0_]
+2022-04-03 21:22:16,706 DEBUG o.h.h.i.a.HqlSqlBaseWalker [JavaFX Application Thread] select >> end [level=1, statement=select]
+2022-04-03 21:22:16,706 DEBUG o.h.h.i.a.QueryTranslatorImpl [JavaFX Application Thread] --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (CurrencyEntity)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'currencyen0_.currency_id as currency1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=CurrencyEntity,tableAlias=currencyen0_,origin=null,columns={,className=cz.spsmb.entity.CurrencyEntity}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'currencyen0_.bank_code as bank_cod2_0_, currencyen0_.currency_code as currency3_0_, currencyen0_.currency_price as currency4_0_, currencyen0_.currency_price_date as currency5_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[currencyen0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'CurrencyEntity currencyen0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=CurrencyEntity,tableAlias=currencyen0_,origin=null,columns={,className=cz.spsmb.entity.CurrencyEntity}}
+
+2022-04-03 21:22:16,707 DEBUG o.h.h.i.a.ErrorTracker [JavaFX Application Thread] throwQueryException() : no errors
+2022-04-03 21:22:16,714 DEBUG o.h.h.i.a.QueryTranslatorImpl [JavaFX Application Thread] HQL: from cz.spsmb.entity.CurrencyEntity
+2022-04-03 21:22:16,714 DEBUG o.h.h.i.a.QueryTranslatorImpl [JavaFX Application Thread] SQL: select currencyen0_.currency_id as currency1_0_, currencyen0_.bank_code as bank_cod2_0_, currencyen0_.currency_code as currency3_0_, currencyen0_.currency_price as currency4_0_, currencyen0_.currency_price_date as currency5_0_ from CurrencyEntity currencyen0_
+2022-04-03 21:22:16,714 DEBUG o.h.h.i.a.ErrorTracker [JavaFX Application Thread] throwQueryException() : no errors
+2022-04-03 21:22:16,723 DEBUG o.h.SQL [JavaFX Application Thread] select currencyen0_.currency_id as currency1_0_, currencyen0_.bank_code as bank_cod2_0_, currencyen0_.currency_code as currency3_0_, currencyen0_.currency_price as currency4_0_, currencyen0_.currency_price_date as currency5_0_ from CurrencyEntity currencyen0_
+2022-04-03 21:22:16,729 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 0
+2022-04-03 21:22:16,732 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#1]
+2022-04-03 21:22:16,738 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 1
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#2]
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 2
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#3]
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 3
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#4]
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 4
+2022-04-03 21:22:16,739 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#5]
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 5
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#6]
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 6
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#7]
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 7
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#8]
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 8
+2022-04-03 21:22:16,740 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#9]
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 9
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#10]
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 10
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#11]
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 11
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#12]
+2022-04-03 21:22:16,741 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 12
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#13]
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 13
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#14]
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 14
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#15]
+2022-04-03 21:22:16,742 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 15
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#16]
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 16
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#17]
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 17
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#18]
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 18
+2022-04-03 21:22:16,743 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#19]
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 19
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#20]
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 20
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#21]
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 21
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#22]
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 22
+2022-04-03 21:22:16,744 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#23]
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 23
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#24]
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 24
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#25]
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 25
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#26]
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 26
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#27]
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 27
+2022-04-03 21:22:16,745 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#28]
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 28
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#29]
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 29
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#30]
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 30
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#31]
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 31
+2022-04-03 21:22:16,746 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#32]
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 32
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#33]
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 33
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#34]
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 34
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#35]
+2022-04-03 21:22:16,747 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 35
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#36]
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 36
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#37]
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 37
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#38]
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 38
+2022-04-03 21:22:16,748 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#39]
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 39
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#40]
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 40
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#41]
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 41
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#42]
+2022-04-03 21:22:16,749 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 42
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#43]
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 43
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#44]
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 44
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#45]
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 45
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#46]
+2022-04-03 21:22:16,750 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 46
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#47]
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 47
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#48]
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 48
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#49]
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 49
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#50]
+2022-04-03 21:22:16,751 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 50
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#51]
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 51
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#52]
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 52
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#53]
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 53
+2022-04-03 21:22:16,752 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#54]
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 54
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#55]
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 55
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#56]
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 56
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#57]
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 57
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#58]
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 58
+2022-04-03 21:22:16,753 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#59]
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 59
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#60]
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 60
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#61]
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 61
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#62]
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 62
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#63]
+2022-04-03 21:22:16,754 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 63
+2022-04-03 21:22:16,755 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#64]
+2022-04-03 21:22:16,755 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 64
+2022-04-03 21:22:16,755 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#65]
+2022-04-03 21:22:16,755 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 65
+2022-04-03 21:22:16,755 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#66]
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 66
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#67]
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 67
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#68]
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 68
+2022-04-03 21:22:16,756 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#69]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 69
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#70]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 70
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#71]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 71
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#72]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 72
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#73]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 73
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#74]
+2022-04-03 21:22:16,757 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 74
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#75]
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 75
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#76]
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 76
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#77]
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 77
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#78]
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 78
+2022-04-03 21:22:16,758 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#79]
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 79
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#80]
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 80
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#81]
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 81
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#82]
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 82
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#83]
+2022-04-03 21:22:16,759 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 83
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#84]
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 84
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#85]
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 85
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#86]
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 86
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#87]
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 87
+2022-04-03 21:22:16,760 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#88]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 88
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#89]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 89
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#90]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 90
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#91]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 91
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#92]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 92
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#93]
+2022-04-03 21:22:16,761 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 93
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#94]
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 94
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#95]
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 95
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#96]
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 96
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#97]
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 97
+2022-04-03 21:22:16,762 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#98]
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 98
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#99]
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 99
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#100]
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 100
+2022-04-03 21:22:16,763 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#101]
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 101
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#102]
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 102
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#103]
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 103
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#104]
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 104
+2022-04-03 21:22:16,764 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#105]
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 105
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#106]
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 106
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#107]
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 107
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#108]
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 108
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#109]
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 109
+2022-04-03 21:22:16,765 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#110]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 110
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#111]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 111
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#112]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 112
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#113]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 113
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#114]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 114
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#115]
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 115
+2022-04-03 21:22:16,766 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#116]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 116
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#117]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 117
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#118]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 118
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#119]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 119
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#120]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 120
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#121]
+2022-04-03 21:22:16,767 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 121
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#122]
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 122
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#123]
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 123
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#124]
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 124
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#125]
+2022-04-03 21:22:16,768 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 125
+2022-04-03 21:22:16,769 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#126]
+2022-04-03 21:22:16,769 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 126
+2022-04-03 21:22:16,769 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#127]
+2022-04-03 21:22:16,769 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 127
+2022-04-03 21:22:16,769 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#128]
+2022-04-03 21:22:16,770 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 128
+2022-04-03 21:22:16,770 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#129]
+2022-04-03 21:22:16,770 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 129
+2022-04-03 21:22:16,770 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#130]
+2022-04-03 21:22:16,770 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 130
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#131]
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 131
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#132]
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 132
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#133]
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 133
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#134]
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 134
+2022-04-03 21:22:16,771 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#135]
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 135
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#136]
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 136
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#137]
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 137
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#138]
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 138
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#139]
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 139
+2022-04-03 21:22:16,772 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#140]
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 140
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#141]
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 141
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#142]
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 142
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#143]
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 143
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#144]
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 144
+2022-04-03 21:22:16,773 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#145]
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 145
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#146]
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 146
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#147]
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 147
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#148]
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 148
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#149]
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 149
+2022-04-03 21:22:16,774 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#150]
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 150
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#151]
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 151
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#152]
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 152
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#153]
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 153
+2022-04-03 21:22:16,775 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#154]
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 154
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#155]
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 155
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#156]
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 156
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#157]
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 157
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#158]
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 158
+2022-04-03 21:22:16,776 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#159]
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 159
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#160]
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 160
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#161]
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 161
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#162]
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 162
+2022-04-03 21:22:16,777 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#163]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 163
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#164]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 164
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#165]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 165
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#166]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 166
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#167]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 167
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#168]
+2022-04-03 21:22:16,778 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 168
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#169]
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 169
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#170]
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 170
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#171]
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 171
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#172]
+2022-04-03 21:22:16,779 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 172
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#173]
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 173
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#174]
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 174
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#175]
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 175
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#176]
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 176
+2022-04-03 21:22:16,780 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#177]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 177
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#178]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 178
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#179]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 179
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#180]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 180
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#181]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 181
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#182]
+2022-04-03 21:22:16,781 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 182
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#183]
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 183
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#184]
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 184
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#185]
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 185
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#186]
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 186
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#187]
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 187
+2022-04-03 21:22:16,782 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#188]
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 188
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#189]
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 189
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#190]
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 190
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#191]
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result set row: 191
+2022-04-03 21:22:16,783 DEBUG o.h.l.Loader [JavaFX Application Thread] Result row: EntityKey[cz.spsmb.entity.CurrencyEntity#192]
+2022-04-03 21:22:16,785 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#1]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#1]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#2]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#2]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#3]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#3]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#4]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#4]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#5]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#5]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#6]
+2022-04-03 21:22:16,787 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#6]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#7]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#7]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#8]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#8]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#9]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#9]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#10]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#10]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#11]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#11]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#12]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#12]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#13]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#13]
+2022-04-03 21:22:16,788 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#14]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#14]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#15]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#15]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#16]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#16]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#17]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#17]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#18]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#18]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#19]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#19]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#20]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#20]
+2022-04-03 21:22:16,789 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#21]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#21]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#22]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#22]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#23]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#23]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#24]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#24]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#25]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#25]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#26]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#26]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#27]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#27]
+2022-04-03 21:22:16,790 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#28]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#28]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#29]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#29]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#30]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#30]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#31]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#31]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#32]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#32]
+2022-04-03 21:22:16,791 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#33]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#33]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#34]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#34]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#35]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#35]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#36]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#36]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#37]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#37]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#38]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#38]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#39]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#39]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#40]
+2022-04-03 21:22:16,792 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#40]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#41]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#41]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#42]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#42]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#43]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#43]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#44]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#44]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#45]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#45]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#46]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#46]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#47]
+2022-04-03 21:22:16,793 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#47]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#48]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#48]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#49]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#49]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#50]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#50]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#51]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#51]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#52]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#52]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#53]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#53]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#54]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#54]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#55]
+2022-04-03 21:22:16,794 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#55]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#56]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#56]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#57]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#57]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#58]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#58]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#59]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#59]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#60]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#60]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#61]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#61]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#62]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#62]
+2022-04-03 21:22:16,795 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#63]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#63]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#64]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#64]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#65]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#65]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#66]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#66]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#67]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#67]
+2022-04-03 21:22:16,796 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#68]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#68]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#69]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#69]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#70]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#70]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#71]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#71]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#72]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#72]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#73]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#73]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#74]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#74]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#75]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#75]
+2022-04-03 21:22:16,797 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#76]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#76]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#77]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#77]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#78]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#78]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#79]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#79]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#80]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#80]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#81]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#81]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#82]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#82]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#83]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#83]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#84]
+2022-04-03 21:22:16,798 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#84]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#85]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#85]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#86]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#86]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#87]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#87]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#88]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#88]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#89]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#89]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#90]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#90]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#91]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#91]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#92]
+2022-04-03 21:22:16,799 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#92]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#93]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#93]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#94]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#94]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#95]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#95]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#96]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#96]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#97]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#97]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#98]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#98]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#99]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#99]
+2022-04-03 21:22:16,800 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#100]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#100]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#101]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#101]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#102]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#102]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#103]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#103]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#104]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#104]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#105]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#105]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#106]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#106]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#107]
+2022-04-03 21:22:16,801 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#107]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#108]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#108]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#109]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#109]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#110]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#110]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#111]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#111]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#112]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#112]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#113]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#113]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#114]
+2022-04-03 21:22:16,802 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#114]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#115]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#115]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#116]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#116]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#117]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#117]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#118]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#118]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#119]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#119]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#120]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#120]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#121]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#121]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#122]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#122]
+2022-04-03 21:22:16,803 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#123]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#123]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#124]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#124]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#125]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#125]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#126]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#126]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#127]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#127]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#128]
+2022-04-03 21:22:16,804 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#128]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#129]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#129]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#130]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#130]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#131]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#131]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#132]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#132]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#133]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#133]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#134]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#134]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#135]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#135]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#136]
+2022-04-03 21:22:16,805 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#136]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#137]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#137]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#138]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#138]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#139]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#139]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#140]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#140]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#141]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#141]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#142]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#142]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#143]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#143]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#144]
+2022-04-03 21:22:16,806 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#144]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#145]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#145]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#146]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#146]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#147]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#147]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#148]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#148]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#149]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#149]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#150]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#150]
+2022-04-03 21:22:16,807 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#151]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#151]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#152]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#152]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#153]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#153]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#154]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#154]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#155]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#155]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#156]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#156]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#157]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#157]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#158]
+2022-04-03 21:22:16,808 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#158]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#159]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#159]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#160]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#160]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#161]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#161]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#162]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#162]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#163]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#163]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#164]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#164]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#165]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#165]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#166]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#166]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#167]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#167]
+2022-04-03 21:22:16,809 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#168]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#168]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#169]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#169]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#170]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#170]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#171]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#171]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#172]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#172]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#173]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#173]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#174]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#174]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#175]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#175]
+2022-04-03 21:22:16,810 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#176]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#176]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#177]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#177]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#178]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#178]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#179]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#179]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#180]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#180]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#181]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#181]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#182]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#182]
+2022-04-03 21:22:16,811 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#183]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#183]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#184]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#184]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#185]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#185]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#186]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#186]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#187]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#187]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#188]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#188]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#189]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#189]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#190]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#190]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#191]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#191]
+2022-04-03 21:22:16,812 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Resolving associations for [cz.spsmb.entity.CurrencyEntity#192]
+2022-04-03 21:22:16,813 DEBUG o.h.e.i.TwoPhaseLoad [JavaFX Application Thread] Done materializing entity [cz.spsmb.entity.CurrencyEntity#192]
+2022-04-03 21:22:16,819 DEBUG o.h.e.t.i.TransactionImpl [JavaFX Application Thread] committing
+2022-04-03 21:22:16,819 DEBUG o.h.e.i.AbstractFlushingEventListener [JavaFX Application Thread] Processing flush-time cascades
+2022-04-03 21:22:16,821 DEBUG o.h.e.i.AbstractFlushingEventListener [JavaFX Application Thread] Dirty checking collections
+2022-04-03 21:22:16,828 DEBUG o.h.e.i.AbstractFlushingEventListener [JavaFX Application Thread] Flushed: 0 insertions, 0 updates, 0 deletions to 192 objects
+2022-04-03 21:22:16,829 DEBUG o.h.e.i.AbstractFlushingEventListener [JavaFX Application Thread] Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] Listing entities:
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=28, currencyCode=SEK, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=29, currencyCode=CHF, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=5.256, id=26, currencyCode=PLN, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=4.939, id=27, currencyCode=RON, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.06641, id=24, currencyCode=HUF, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,830 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.506, id=25, currencyCode=NOK, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.17992999999999998, id=22, currencyCode=JPY, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=17.646, id=23, currencyCode=CAD, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=24.414, id=20, currencyCode=EUR, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.224, id=21, currencyCode=HRK, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.47, id=18, currencyCode=CNY, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.282, id=19, currencyCode=DKK, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=28.966, id=16, currencyCode=GBP, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=16.498, id=17, currencyCode=AUD, currencyPriceDate=2022-04-03 19:50:56.983}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=1.504, id=14, currencyCode=TRY, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=22.06, id=15, currencyCode=USD, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=12, currencyCode=SEK, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,831 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=13, currencyCode=CHF, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,832 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=5.256, id=10, currencyCode=PLN, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,832 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=4.939, id=11, currencyCode=RON, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,832 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.06641, id=8, currencyCode=HUF, currencyPriceDate=2022-04-03 19:50:56.445}
+2022-04-03 21:22:16,832 DEBUG o.h.i.u.EntityPrinter [JavaFX Application Thread] More......
+2022-04-03 21:22:16,833 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [JavaFX Application Thread] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:16,833 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [JavaFX Application Thread] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:17,173 INFO c.s.s.d.CSOBDataConvertor [Thread-0] Success
+2022-04-03 21:22:17,173 DEBUG o.h.e.t.i.TransactionImpl [Thread-0] begin
+2022-04-03 21:22:17,174 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,178 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 193
+2022-04-03 21:22:17,178 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,178 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 193, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,182 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,183 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 194
+2022-04-03 21:22:17,183 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,183 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 194, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,183 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,183 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 195
+2022-04-03 21:22:17,184 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,184 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 195, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,184 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,184 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 196
+2022-04-03 21:22:17,184 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,184 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 196, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,184 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,184 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 197
+2022-04-03 21:22:17,184 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,185 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 197, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,185 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,185 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 198
+2022-04-03 21:22:17,185 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,185 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 198, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,185 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,185 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 199
+2022-04-03 21:22:17,185 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,185 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 199, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,186 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,186 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 200
+2022-04-03 21:22:17,186 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,186 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 200, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,186 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,186 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 201
+2022-04-03 21:22:17,186 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,187 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 201, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,187 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,187 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 202
+2022-04-03 21:22:17,187 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,187 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 202, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,187 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,187 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 203
+2022-04-03 21:22:17,187 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,188 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 203, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,188 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,188 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 204
+2022-04-03 21:22:17,188 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,188 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 204, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,188 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,188 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 205
+2022-04-03 21:22:17,188 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,188 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 205, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,189 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,189 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 206
+2022-04-03 21:22:17,189 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,189 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 206, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,189 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,189 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 207
+2022-04-03 21:22:17,189 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,190 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 207, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,190 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,190 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 208
+2022-04-03 21:22:17,190 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,190 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 208, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,190 INFO c.s.d.Database [Thread-0] Added 16 currencies to database
+2022-04-03 21:22:17,191 DEBUG o.h.e.t.i.TransactionImpl [Thread-0] committing
+2022-04-03 21:22:17,191 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Processing flush-time cascades
+2022-04-03 21:22:17,191 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Dirty checking collections
+2022-04-03 21:22:17,195 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Flushed: 16 insertions, 0 updates, 0 deletions to 208 objects
+2022-04-03 21:22:17,195 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] Listing entities:
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=124, currencyCode=SEK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=125, currencyCode=CHF, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=5.256, id=122, currencyCode=PLN, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=4.939, id=123, currencyCode=RON, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.06641, id=120, currencyCode=HUF, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.506, id=121, currencyCode=NOK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,195 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.17992999999999998, id=118, currencyCode=JPY, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=17.646, id=119, currencyCode=CAD, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=24.414, id=116, currencyCode=EUR, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.224, id=117, currencyCode=HRK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.47, id=114, currencyCode=CNY, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.282, id=115, currencyCode=DKK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=28.966, id=112, currencyCode=GBP, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=16.498, id=113, currencyCode=AUD, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=1.504, id=110, currencyCode=TRY, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=22.06, id=111, currencyCode=USD, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=108, currencyCode=SEK, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=109, currencyCode=CHF, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,196 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=5.256, id=106, currencyCode=PLN, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,197 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=4.939, id=107, currencyCode=RON, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,197 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.06641, id=104, currencyCode=HUF, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,197 DEBUG o.h.i.u.EntityPrinter [Thread-0] More......
+2022-04-03 21:22:17,200 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,204 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,204 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,205 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,205 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,205 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,205 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,206 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,206 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,206 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,206 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,207 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,207 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,207 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,208 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,208 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,209 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [Thread-0] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:17,209 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [Thread-0] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:17,213 DEBUG c.s.j.DataJob [Thread-0] DataJob[1] (next loop in 5.0 minutes (300000.0 ms))
+2022-04-03 21:22:17,311 INFO c.s.s.h.WebsiteCheck [Thread-0] Success
+2022-04-03 21:22:17,430 INFO c.s.s.d.CSOBDataConvertor [Thread-0] Success
+2022-04-03 21:22:17,430 DEBUG o.h.e.t.i.TransactionImpl [Thread-0] begin
+2022-04-03 21:22:17,430 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,431 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 209
+2022-04-03 21:22:17,431 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,431 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 209, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,431 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,431 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 210
+2022-04-03 21:22:17,431 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,432 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 210, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,432 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,432 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 211
+2022-04-03 21:22:17,432 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,432 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 211, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,432 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,433 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 212
+2022-04-03 21:22:17,433 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,433 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 212, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,433 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,433 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 213
+2022-04-03 21:22:17,433 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,433 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 213, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,433 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,433 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 214
+2022-04-03 21:22:17,433 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,434 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 214, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,434 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,434 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 215
+2022-04-03 21:22:17,434 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,435 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 215, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,435 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,435 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 216
+2022-04-03 21:22:17,435 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,435 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 216, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,435 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,436 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 217
+2022-04-03 21:22:17,436 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,436 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 217, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,436 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,436 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 218
+2022-04-03 21:22:17,436 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,436 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 218, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,437 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,437 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 219
+2022-04-03 21:22:17,437 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,437 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 219, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,437 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,437 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 220
+2022-04-03 21:22:17,437 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,437 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 220, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,437 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,438 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 221
+2022-04-03 21:22:17,438 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,438 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 221, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,438 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,438 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 222
+2022-04-03 21:22:17,438 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,438 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 222, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,439 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,439 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 223
+2022-04-03 21:22:17,439 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,439 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 223, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,439 DEBUG o.h.SQL [Thread-0] call next value for hibernate_sequence
+2022-04-03 21:22:17,439 DEBUG o.h.i.e.SequenceStructure [Thread-0] Sequence value obtained: 224
+2022-04-03 21:22:17,439 DEBUG o.h.r.j.i.ResourceRegistryStandardImpl [Thread-0] HHH000387: ResultSet's statement was not registered
+2022-04-03 21:22:17,440 DEBUG o.h.e.i.AbstractSaveEventListener [Thread-0] Generated identifier: 224, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2022-04-03 21:22:17,440 INFO c.s.d.Database [Thread-0] Added 16 currencies to database
+2022-04-03 21:22:17,440 DEBUG o.h.e.t.i.TransactionImpl [Thread-0] committing
+2022-04-03 21:22:17,440 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Processing flush-time cascades
+2022-04-03 21:22:17,440 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Dirty checking collections
+2022-04-03 21:22:17,442 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Flushed: 16 insertions, 0 updates, 0 deletions to 224 objects
+2022-04-03 21:22:17,443 DEBUG o.h.e.i.AbstractFlushingEventListener [Thread-0] Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] Listing entities:
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=28.966, id=224, currencyCode=GBP, currencyPriceDate=Sun Apr 03 21:22:17 CEST 2022}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=1.504, id=222, currencyCode=TRY, currencyPriceDate=Sun Apr 03 21:22:17 CEST 2022}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=22.06, id=223, currencyCode=USD, currencyPriceDate=Sun Apr 03 21:22:17 CEST 2022}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=124, currencyCode=SEK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=125, currencyCode=CHF, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=5.256, id=122, currencyCode=PLN, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=4.939, id=123, currencyCode=RON, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.06641, id=120, currencyCode=HUF, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.506, id=121, currencyCode=NOK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=0.17992999999999998, id=118, currencyCode=JPY, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=17.646, id=119, currencyCode=CAD, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=24.414, id=116, currencyCode=EUR, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.224, id=117, currencyCode=HRK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,443 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.47, id=114, currencyCode=CNY, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=3.282, id=115, currencyCode=DKK, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=28.966, id=112, currencyCode=GBP, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=16.498, id=113, currencyCode=AUD, currencyPriceDate=2022-04-03 19:54:29.828}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=1.504, id=110, currencyCode=TRY, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=22.06, id=111, currencyCode=USD, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=2.347, id=108, currencyCode=SEK, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] cz.spsmb.entity.CurrencyEntity{bankCode=CSOB, currencyPrice=23.854, id=109, currencyCode=CHF, currencyPriceDate=2022-04-03 19:54:29.444}
+2022-04-03 21:22:17,444 DEBUG o.h.i.u.EntityPrinter [Thread-0] More......
+2022-04-03 21:22:17,444 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,444 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,445 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,445 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,445 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,445 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,445 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,446 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,446 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,446 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,446 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,447 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,447 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,447 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,447 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,448 DEBUG o.h.SQL [Thread-0] insert into CurrencyEntity (bank_code, currency_code, currency_price, currency_price_date, currency_id) values (?, ?, ?, ?, ?)
+2022-04-03 21:22:17,448 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [Thread-0] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:17,448 DEBUG o.h.r.j.i.LogicalConnectionManagedImpl [Thread-0] Initiating JDBC connection release from afterTransaction
+2022-04-03 21:22:17,454 DEBUG c.s.g.MainController [Thread-0] Gui updated
+2022-04-03 21:22:17,547 INFO c.s.s.d.CSOBDataConvertor [Thread-0] Success

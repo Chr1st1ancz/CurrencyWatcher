@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.spsmb.gui.MainController">
+   <children>
+      <Button fx:id="CurrencyBTN" layoutX="154.0" layoutY="661.0" mnemonicParsing="false" onAction="#openCurrencyReminder" text="CURRENCY REMINDER SETTINGS" />
+
+      <LineChart fx:id="graph" layoutX="17.0" layoutY="267.0" prefHeight="387.0" prefWidth="467.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" fx:id="xChart" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yChart" side="LEFT" />
+         </yAxis>
+      </LineChart>
+
+
+      <Label layoutX="79.0" layoutY="54.0" text="EUR" />
+      <Label layoutX="79.0" layoutY="104.0" text="GBP" />
+      <Label layoutX="79.0" layoutY="154.0" text="HRK" />
+      <Label layoutX="285.0" layoutY="54.0" text="USD" />
+      <Label layoutX="285.0" layoutY="104.0" text="CHF" />
+      <Label layoutX="285.0" layoutY="154.0" text="PLN" />
+      <Label layoutX="188.0" layoutY="204.0" text="HUF" />
+      <TextField fx:id="EURinput" editable="false" layoutX="125.0" layoutY="50.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="GBPinput" editable="false" layoutX="125.0" layoutY="100.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="HRKinput" editable="false" layoutX="125.0" layoutY="150.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="USDinput" editable="false" layoutX="325.0" layoutY="50.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="CHFinput" editable="false" layoutX="325.0" layoutY="100.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="PLNinput" editable="false" layoutX="325.0" layoutY="150.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="HUFinput" editable="false" layoutX="225.0" layoutY="200.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="lastUpdate" editable="false" layoutX="225.0" layoutY="242.0" prefHeight="17.0" prefWidth="110.0" />
+      <Label layoutX="151.0" layoutY="2.0" text="EXCHANGE RATES TO CZK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="246.0" text="Last update:" />
+   </children>
+</AnchorPane>
