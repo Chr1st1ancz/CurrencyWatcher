@@ -25,7 +25,7 @@ public class WebsiteCheck {
             }
         } catch (IOException exception) {
             logger.error("Unexpected error (" + url + "): " + exception);
-            Window.errorBox(exception.toString() + "\nurl: " + url, "Check if the site isn't redirecting to different site or if the site exists", WebsiteCheck.class.toString());
+            Window.errorBox(exception + "\nurl: " + url, "Check if the site isn't redirecting to different site or if the site exists", WebsiteCheck.class.toString());
             System.exit(0);
         }
         logger.info("Success");

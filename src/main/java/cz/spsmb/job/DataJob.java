@@ -21,16 +21,12 @@ public class DataJob extends Thread {
 
     private volatile CSOBDataConvertor csobData = new CSOBDataConvertor();
     private volatile List<CurrencyEntity> currencyList;
-    private String listConvert(List<CurrencyEntity> list) {
-        String returned = "";
-        for (CurrencyEntity currencyEntity : list) {
-            returned += "\r\n" + currencyEntity.getCurrencyCode() + " : " + currencyEntity.getCurrencyPrice();
-        }
-        return returned;
-    }
-
+    private volatile List<CurrencyEntity> lastCurrencyList;
     private volatile boolean isRunning = true;
     private volatile boolean isDebugMode = false;
+    private volatile int loopCounter = 0;
+    private volatile String mail = "";
+
     private MainController stage;
 
     public MainController getStage() {
@@ -51,19 +47,38 @@ public class DataJob extends Thread {
             logger.error("Tried to load config.properties");
         }
 
-        int loopCounter = 0;
         do {
             loopCounter++;
             logger.debug("DataJob[" + loopCounter + "] (next loop in " + Double.parseDouble(prop.getProperty("app.timer.minutes")) + " minutes (" + Double.parseDouble(prop.getProperty("app.timer.minutes")) * 60000 + " ms))");
             String url = prop.getProperty("app.site.csob");
+
             if (WebsiteCheck.isAccessable(url, Integer.parseInt(prop.getProperty("web.timeout")))) {
                 currencyList = csobData.convert(new SimpleDataFetcher().getContent(url));
                 stage.updateCurrencies();
+
+                /* Mail Logic */
+                StringBuilder response = new StringBuilder();
+                if (loopCounter > 1) {
+                    for (int i = 0; i < currencyList.size(); i++) {
+                        double currentPrice = currencyList.get(i).getCurrencyPrice();
+                        double lastPrice = lastCurrencyList.get(i).getCurrencyPrice();
+                        String currencyCode = currencyList.get(i).getCurrencyCode();
+                        if (currentPrice < lastPrice) {
+                            response.append(currencyCode).append(" dropped from ").append(lastPrice).append(" CZK to ").append(currentPrice).append(" CZK\r\n");
+                        } else if (currentPrice > lastPrice) {
+                            response.append(currencyCode).append(" jumped from ").append(lastPrice).append(" CZK to ").append(currentPrice).append(" CZK\r\n");
+                        }
+                    }
+                    lastCurrencyList.clear();
+                }
+
+                lastCurrencyList = csobData.convert(new SimpleDataFetcher().getContent(url));
                 currencyList.clear();
-                if (!isDebugMode) {
-                    FinalSendMail.send("gg.polacek@gmail.com", prop.getProperty("mail.subject"), listConvert(currencyList));
+                if (response.length() != 0) {
+                    FinalSendMail.send(mail, prop.getProperty("mail.subject"), response.toString());
                 }
             }
+
             try {
                 Thread.sleep((long) (60000 * Double.parseDouble(prop.getProperty("app.timer.minutes"))));
             } catch (InterruptedException e) {
@@ -94,5 +109,21 @@ public class DataJob extends Thread {
 
     public void setCurrencyList(List<CurrencyEntity> currencyList) {
         this.currencyList = currencyList;
+    }
+
+    public int getLoopCounter() {
+        return loopCounter;
+    }
+
+    public void setLoopCounter(int loopCounter) {
+        this.loopCounter = loopCounter;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 }

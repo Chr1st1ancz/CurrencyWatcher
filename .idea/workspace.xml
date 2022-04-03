@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Newest Merge&#10;- Fast SimpleDateFormat update">
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/mail/SimpleMailService.java" afterDir="false" />
+    <list default="true" id="33bac7d1-6e7d-4561-b913-457ab5c3b7c8" name="Changes" comment="Hot Fixes&#10;- Better SimpleDateFormat [previous]&#10;- SimpleMailService.java Logger Success changed to Info for Consistency">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/CurrencyReminderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/CurrencyReminderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/GuiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/popUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/gui/popUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/job/DataJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/job/DataJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/modules/modules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/http/WebsiteCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/spsmb/service/http/WebsiteCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,8 +143,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application (2)" />
-        <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.GuiApplication (1)" />
         <item itemvalue="Application.Logger" />
         <item itemvalue="Application.Application" />
       </list>
@@ -186,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648923002812</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hot Fixes&#10;- Better SimpleDateFormat [previous]&#10;- SimpleMailService.java Logger Success changed to Info for Consistency">
+      <created>1648923803780</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648923803780</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +223,7 @@
     <MESSAGE value="Megeruju to ok?&#10;- PLS MARGE asi" />
     <MESSAGE value="Newest Merge&#10;- Logger Updated (localization to English)&#10;- Merged Half of Project (looper + backend + frontend)&#10;- Deleted unnecessary files&#10;- Updated hello-view.fxml, HelloController.java (to MainController.java), SimpleMailService.java, GuiApplication.java, config.properties&#10;- Added WebsiteCheck.java, Window.java&#10;Todo&#10;- Send mail if Good Price&#10;- Updating Currency Graph" />
     <MESSAGE value="Newest Merge&#10;- Fast SimpleDateFormat update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Newest Merge&#10;- Fast SimpleDateFormat update" />
+    <MESSAGE value="Hot Fixes&#10;- Better SimpleDateFormat [previous]&#10;- SimpleMailService.java Logger Success changed to Info for Consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hot Fixes&#10;- Better SimpleDateFormat [previous]&#10;- SimpleMailService.java Logger Success changed to Info for Consistency" />
   </component>
 </project>

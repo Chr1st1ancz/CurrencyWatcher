@@ -10,6 +10,14 @@ import java.util.ResourceBundle;
 
 public class popUpController implements Initializable {
 
+    /*
+    * Tohle asi neni potreba
+    * uz jsem udelal vlastni Error Popupy, prave kdyz stranka nefunguje
+    * takze se na to muzes vysrat
+    *
+    * Honza
+    * */
+
     public Label bankName;
 
     @Override

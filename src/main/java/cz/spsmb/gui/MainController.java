@@ -1,8 +1,6 @@
 package cz.spsmb.gui;
 
-import cz.spsmb.entity.CurrencyEntity;
 import cz.spsmb.job.DataJob;
-import cz.spsmb.service.http.WebsiteCheck;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -46,7 +44,7 @@ public class MainController implements Initializable {
     public double CHFp;
     public double TRYp;
     public double USDp;
-    public double GPBp;
+    public double GBPp;
 
     final static String EUR = "EUR";
     final static String GBP = "GBP";
@@ -75,7 +73,15 @@ public class MainController implements Initializable {
     @FXML
     private Label welcomeText;
     @FXML
-    private LineChart graph;
+    private LineChart<Number, Double> graph;
+
+    private XYChart.Series<Number, Double> EURd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> USDd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> GBPd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> CHFd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> HRKd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> PLNd = new XYChart.Series<>();
+    private XYChart.Series<Number, Double> HUFd = new XYChart.Series<>();
 
     @FXML
     public void openCurrencyReminder(ActionEvent actionEvent) throws IOException {
@@ -91,38 +97,40 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         dataJob.setStage(this);
         dataJob.start();
-        final NumberAxis xChart = new NumberAxis();
-        final NumberAxis yChart = new NumberAxis();
         graph.setTitle("Currency watcher");
-        xChart.setLabel("date");
-        yChart.setLabel("value");
-        XYChart.Series series1 = new XYChart.Series();
-        series1.setName(EUR);
-        series1.getData().add(new XYChart.Data(1,2 ));
-        XYChart.Series series2 = new XYChart.Series();
-        series2.setName(GBP);
-        series2.getData().add(new XYChart.Data(3, 5));
-        XYChart.Series series3 = new XYChart.Series();
-        series3.setName(HRK);
-        series3.getData().add(new XYChart.Data(2,5 ));
-        XYChart.Series series4 = new XYChart.Series();
-        series4.setName(USD);
-        series4.getData().add(new XYChart.Data(2,4 ));
-        XYChart.Series series5 = new XYChart.Series();
-        series5.setName(CHF);
-        series5.getData().add(new XYChart.Data(6,5 ));
-        XYChart.Series series6 = new XYChart.Series();
-        series6.setName(PLN);
-        series6.getData().add(new XYChart.Data(8,5 ));
-        graph.getData().add(series1);
-        graph.getData().add(series2);
-        graph.getData().add(series3);
-        graph.getData().add(series4);
-        graph.getData().add(series5);
-        graph.getData().add(series6);
+        var xAxis = new NumberAxis();
+        xAxis.setLabel("Date");
+        var yAxis = new NumberAxis();
+        yAxis.setLabel("Price (CZK)");
+        EURd.setName("EUR");
+        updateGraphChart(EURd, 0.0);
+        graph.getData().add(EURd);
+        USDd.setName("USD");
+        updateGraphChart(USDd, 0.0);
+        graph.getData().add(USDd);
+        GBPd.setName("GBP");
+        updateGraphChart(GBPd, 0.0);
+        graph.getData().add(GBPd);
+        CHFd.setName("CHF");
+        updateGraphChart(CHFd, 0.0);
+        graph.getData().add(CHFd);
+        HRKd.setName("HRK");
+        updateGraphChart(HRKd, 0.0);
+        graph.getData().add(HRKd);
+        PLNd.setName("PLN");
+        updateGraphChart(PLNd, 0.0);
+        graph.getData().add(PLNd);
+        HUFd.setName("HUF");
+        updateGraphChart(HUFd, 0.0);
+        graph.getData().add(HUFd);
     }
 
     public void updateCurrencies() {
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e) {
+            logger.error("Gui update: " + e);
+        }
         AUDp = dataJob.getCurrencyList().get(0).getCurrencyPrice();
         CNYp = dataJob.getCurrencyList().get(1).getCurrencyPrice();
         DKKp = dataJob.getCurrencyList().get(2).getCurrencyPrice();
@@ -138,18 +146,28 @@ public class MainController implements Initializable {
         CHFp = dataJob.getCurrencyList().get(12).getCurrencyPrice();
         TRYp = dataJob.getCurrencyList().get(13).getCurrencyPrice();
         USDp = dataJob.getCurrencyList().get(14).getCurrencyPrice();
-        GPBp = dataJob.getCurrencyList().get(15).getCurrencyPrice();
+        GBPp = dataJob.getCurrencyList().get(15).getCurrencyPrice();
         EURinput.setText(EURp + "");
         USDinput.setText(USDp + "");
-        GBPinput.setText(GPBp + "");
+        GBPinput.setText(GBPp + "");
         CHFinput.setText(CHFp + "");
         HRKinput.setText(HRKp + "");
         PLNinput.setText(PLNp + "");
         HUFinput.setText(HUFp + "");
-
+        updateGraphChart(EURd, EURp);
+        updateGraphChart(USDd, USDp);
+        updateGraphChart(GBPd, GBPp);
+        updateGraphChart(CHFd, CHFp);
+        updateGraphChart(HRKd, HRKp);
+        updateGraphChart(PLNd, PLNp);
+        updateGraphChart(HUFd, HUFp);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM. (HH:mm:ss)");
         String date = simpleDateFormat.format(new Date());
         lastUpdate.setText(date);
         logger.debug("Gui updated");
+    }
+
+    public void updateGraphChart(XYChart.Series<Number, Double> chart, Double value) {
+        chart.getData().add(new XYChart.Data<>(dataJob.getLoopCounter(), value));
     }
 }

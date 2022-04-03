@@ -15,8 +15,8 @@ import java.util.Properties;
 public class GuiApplication extends Application {
 
     public static DataJob dataJob = new DataJob();
-    private InputStream input = this.getClass().getClassLoader().getResourceAsStream("config.properties");
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final InputStream input = this.getClass().getClassLoader().getResourceAsStream("config.properties");
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -37,6 +37,7 @@ public class GuiApplication extends Application {
     }
 
     public static void main(String[] args) {
+        dataJob.setDebugMode(false);
         launch();
         dataJob.setRunning(false);
         System.exit(0);
