@@ -37,7 +37,6 @@ public class Database {
         }
         e.printStackTrace();
     }
-
         List<CurrencyEntity> existingCurrencies = new ArrayList<>();
         return existingCurrencies;
     }
